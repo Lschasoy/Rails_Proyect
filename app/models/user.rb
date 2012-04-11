@@ -10,7 +10,8 @@
 #
 
 class User < ActiveRecord::Base
-    attr_accessible :name, :email
+    attr_accessor :password
+    attr_accessible :name, :email, :password, :password_confirmation
 
     validates :name, :presence => true,
                      :length => { :maximum => 25 }
@@ -19,4 +20,9 @@ class User < ActiveRecord::Base
 
     validates :email, :presence => true,
                      :format => { :with => email_regex }
+
+    #Confirmacion de contraseña
+    validates :password, :presence => true,
+                         :confirmation => true,
+                         :length => { :within => 6..40 }
 end

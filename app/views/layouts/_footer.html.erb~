@@ -1,10 +1,10 @@
 <footer>
   <nav class="round">
     <ul>
-      <li><%= link_to "About", '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
-      <li><a href="http://www.railstutorial.org/">Rails Tutorial</a></li>
+      <li><%= link_to "Acerca de", about_path %></li>
+      <li><%= link_to "Contacto", contact_path %></li>
+      <li><a href="http://news.railstutorial.org/">Noticias</a></li>
+      <li><a href="http://www.railstutorial.org/">Desarrollado gracias a ...</a></li>
     </ul>
   </nav>
 </footer>

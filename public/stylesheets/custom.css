@@ -3,7 +3,9 @@
 }
 
 body {
-  background: #cff;
+  background: #cdf;
+  background-image: url(/images/bg.png);
+  background-repeat: no-repeat;
 }
 
 header {
@@ -61,6 +63,7 @@ nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0.2em 0;
+  font-size: 20px;
 }
 
 nav ul li a {

@@ -1,9 +1,9 @@
-<h1>Sample App</h1>
+<h1>Bienvenidos a Micopost</h1>
 
 <p>
-  This is the home page for the
-  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
+  Únete a la comunidad de 
+  <%= link_to "Micropost", root_path %>
+  y comparte con tus amigos lo que quieras.
 </p>
 
-<%= link_to "Sign up now!", '#', :class => "signup_button round" %>
+<%= link_to "Únete ahora!", signup_path, :class => "signup_button round" %>

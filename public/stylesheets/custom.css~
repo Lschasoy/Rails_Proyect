@@ -3,7 +3,9 @@
 }
 
 body {
-  background: #cff;
+  background: #cdf;
+  background-image: url(/images/bg.png);
+  background-repeat: no-repeat;
 }
 
 header {
@@ -60,7 +62,8 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0.2em 0.3;
+  font-size: 20px;
 }
 
 nav ul li a {
@@ -105,5 +108,27 @@ footer {
 
 footer nav {
   float: none;
+}
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
 }
 

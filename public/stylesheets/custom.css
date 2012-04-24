@@ -44,6 +44,8 @@ a:visited {
   color: #069;
 }
 
+/* Navigation */
+
 nav {
   float: right;
 }
@@ -79,6 +81,8 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Sign up button */
+
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
@@ -91,6 +95,8 @@ a.signup_button {
   font-weight: bold;
   padding: 20px;
 }
+
+/* Round corners */
 
 .round {
   -moz-border-radius:    10px;
@@ -109,6 +115,7 @@ footer {
 footer nav {
   float: none;
 }
+/* User show page */
 
 table.profile {
   width: 100%;
@@ -131,4 +138,46 @@ td.sidebar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
 
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

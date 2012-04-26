@@ -9,10 +9,10 @@ describe "Users" do
       it "should not make a new user" do
         lambda do
           visit signup_path
-          fill_in "Nombre",             :with => ""
-          fill_in "Email",              :with => ""
-          fill_in "Password",           :with => ""
-          fill_in "Confirmar password", :with => ""
+          fill_in "Nombre",               :with => ""
+          fill_in "Email",                :with => ""
+          fill_in "Contraseña",           :with => ""
+          fill_in "Confirmar contraseña", :with => ""
           click_button
           response.should render_template('users/new')
           response.should have_selector("div#error_explanation")
@@ -24,10 +24,10 @@ describe "Users" do
       it "should make a new user" do
         lambda do
           visit signup_path
-          fill_in "Nombre",             :with => "Example User"
-          fill_in "Email",              :with => "user@example.com"
-          fill_in "Password",           :with => "foobar"
-          fill_in "Confirmar password", :with => "foobar"
+          fill_in "Nombre",               :with => "Example User"
+          fill_in "Email",                :with => "user@example.com"
+          fill_in "Contraseña",           :with => "foobar"
+          fill_in "Confirmar contraseña", :with => "foobar"
           click_button
           response.should have_selector("div.flash.success",
                                         :content => "Bienvenido")

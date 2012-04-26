@@ -1,4 +1,4 @@
-<h1>Iniciar sesión</h1>
+<h1>Iniciar sesión	</h1>
 
 <%= form_for(:session, :url => sessions_path) do |f| %>
   <div class="field">

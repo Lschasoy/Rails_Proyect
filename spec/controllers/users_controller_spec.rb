@@ -43,7 +43,7 @@ describe "GET 'show'" do
 
     it "should have the right title" do
       get :new
-      response.should have_selector("title", :content => "Sign up")
+      response.should have_selector("title", :content => "Nuevo usuario")
     end
   end
 
@@ -67,7 +67,7 @@ describe "GET 'show'" do
 
       it "should have the right title" do
         post :create, :user => @attr
-        response.should have_selector("title", :content => "Sign up")
+        response.should have_selector("title", :content => "Nuevo usuario")
       end
 
       it "should render the 'new' page" do

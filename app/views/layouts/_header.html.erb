@@ -5,7 +5,9 @@
     <ul>
       <li><%= link_to "Inicio", root_path %></li>
      <% if signed_in? %>
+      <li><%= link_to "Usuarios", users_path %></li>
       <li><%= link_to "Perfil", current_user %></li>
+      <li><%= link_to "Ajustes", edit_user_path(current_user) %></li>
       <% end %>
       <li><%= link_to "Ayuda", help_path %></li>
       <% if signed_in? %>

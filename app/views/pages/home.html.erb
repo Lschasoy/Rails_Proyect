@@ -1,11 +1,25 @@
-<h1>Bienvenidos a Micropost</h1>
-<p>
-  Únete a la comunidad de 
-  <a href="http://railstutorial.org/">Micropost</a>
-  y comparte con tus amigos lo que quieras.
-</p>
+<% if signed_in? %>
+  <table class="front" summary="Para usuarios conectados">
+    <tr>
+      <td class="main">
+        <h1 class="micropost">¿Que hay de nuevo?</h1>
+        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/feed' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <h1>Bienvenidos a Micropost</h1>
+  <p>
+    Únete a la comunidad de 
+    <a href="http://railstutorial.org/">Micropost</a>
+    y comparte con tus amigos lo que quieras.
+  </p>
 
-<%= link_to "Únete ahora!", signup_path, :class => "signup_button round" %>
-
+  <%= link_to "Únete ahora!", signup_path, :class => "signup_button round" %>
+<% end %>
 
 

@@ -3,9 +3,22 @@
   <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Help", help_path %></li>
-      <li><%= link_to "Sign in", '#' %></li>
+      <li><%= link_to "Inicio", root_path %></li>
+      <li> &nbsp; </li>
+      <li><%= link_to "Ayuda", help_path %></li>
+      <li> &nbsp; </li>
+      <% if signed_in? %>
+         <li><%= link_to "Salir", signout_path, :method => :delete %></li>
+      <% else %>
+         <li><%= link_to "Entrar", signin_path %></li>
+      <% end %>
+    </ul>
+    <ul>
+      <% if signed_in? %>
+         <li><%= link_to "Usuarios", users_path %></li>
+         <li><%= link_to "Perfil", current_user %></li>
+         <li><%= link_to "Ajustes", edit_user_path(current_user) %></li>
+      <% end %>
     </ul>
   </nav>
 </header>

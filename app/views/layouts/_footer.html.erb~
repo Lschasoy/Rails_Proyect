@@ -1,10 +1,5 @@
 <footer>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "Acerca de", about_path %></li>
-      <li><%= link_to "Contacto", contact_path %></li>
-      <li><a href="http://news.railstutorial.org/">Noticias</a></li>
-      <li><a href="http://www.railstutorial.org/">Desarrollado gracias a ...</a></li>
-    </ul>
-  </nav>
+  <div id="footer">
+	<p>Copyright (c) 2012 <a href="http://www.ull.es/"> Universidad de La Laguna. All rights reserved. Designed by <a href="http://www.freecsstemplates.org/"> Free CSS Templates</a>.</p>
+  </div>
 </footer>

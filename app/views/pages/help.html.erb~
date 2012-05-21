@@ -1,7 +1,14 @@
-<h1>Ayuda</h1>
+<div id="content">
+    <div class="post">
+<h1 class="title">Ayuda</h1>
+<div style="clear: both;">&nbsp;</div>
+<div class="entry">
 <p>
   Ayuda para el desarrollo de aplicaciones en la página de ayuda de 
   <a href="http://railstutorial.org/help">Rails Tutorial</a>.
   Para conseguir ayuda del desarrollo de esta aplicación visitar el libro de 
   <a href="http://railstutorial.org/book">Rails Tutorial</a>.
 </p>
+</div>
+</div>
+</div>

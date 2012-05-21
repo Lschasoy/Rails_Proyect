@@ -4,6 +4,6 @@
     <%= f.text_area :content %>
   </div>
   <div class="actions">
-    <%= f.submit "Postear" %>
+    <%= f.submit "Submit" %>
   </div>
 <% end %>

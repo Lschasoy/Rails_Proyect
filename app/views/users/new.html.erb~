@@ -1,7 +1,10 @@
+<div id="singin">
+  <div id="signin" class="int">
+
 <h1>Formulario de registro</h1>
 
 <%= form_for(@user) do |f| %>
-  <%= render 'shared/error_messages' %>
+  <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <%= f.label :name, "Nombre" %><br />
     <%= f.text_field :name %>
@@ -11,11 +14,11 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :password, "Contraseña" %><br />
+    <%= f.label :password, "Password" %><br />
     <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation, "Confirmar contraseña" %><br />
+    <%= f.label :password_confirmation, "Confirmar password" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
@@ -23,3 +26,5 @@
   </div>
 <% end %>
 
+</div>
+</div>

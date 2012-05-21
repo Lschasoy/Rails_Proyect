@@ -1,17 +1,19 @@
-<h1>Iniciar sesión	</h1>
-
-<%= form_for(:session, :url => sessions_path) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+<div id="singin">
+  <div id="signin" class="ext">
+    <h1>Iniciar sesión</h1>
+    <%= form_for(:session, :url => sessions_path) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.text_field :email %>
+      </div>
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Entrar" %>
+      </div>
+    <% end %>
+    <p>Nuevo ususario? <%= link_to "Únete ahora!", signup_path %></p>
   </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Entrar" %>
-  </div>
-<% end %>
-
-<p>Nuevo ususario? <%= link_to "Únete ahora!", signup_path %></p>
+</div>

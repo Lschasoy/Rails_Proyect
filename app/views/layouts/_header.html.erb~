@@ -1,24 +1,43 @@
-<header>
-  <% logo = image_tag("pajarito.png", :alt => "Micropost app", :class => "round") %>
-  <%= link_to logo, root_path %>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "Inicio", root_path %></li>
-      <li> &nbsp; </li>
-      <li><%= link_to "Ayuda", help_path %></li>
-      <li> &nbsp; </li>
-      <% if signed_in? %>
-         <li><%= link_to "Salir", signout_path, :method => :delete %></li>
-      <% else %>
-         <li><%= link_to "Entrar", signin_path %></li>
-      <% end %>
-    </ul>
-    <ul>
-      <% if signed_in? %>
-         <li><%= link_to "Usuarios", users_path %></li>
-         <li><%= link_to "Perfil", current_user %></li>
-         <li><%= link_to "Ajustes", edit_user_path(current_user) %></li>
-      <% end %>
-    </ul>
-  </nav>
-</header>
+<div id="header-wrapper">
+  <div id="header">
+    <div id="logo">
+      <% logo = image_tag("pajarito.png", :alt => "Micropost app", :class => "round") %>
+      <%= link_to logo, root_path %>
+    </div>
+    <div id="menu">
+      <ul>
+	<li><%= link_to "Inicio", root_path %></li>
+	<li><%= link_to "Ayuda", help_path %></li>
+	<% if signed_in? %>
+	  <li><%= link_to "Usuarios", users_path %></li>
+	  <li><%= link_to "Perfil", current_user %></li>
+	  <li><%= link_to "Ajustes", edit_user_path(current_user) %></li>
+	  <li><%= link_to "Salir", signout_path, :method => :delete %></li>
+	<% else %>
+	  <li><%= link_to "Entrar", signin_path %></li>
+	<% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<!--<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#">Regeneracy  </a></h1>
+				<p> design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Photos</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>-->

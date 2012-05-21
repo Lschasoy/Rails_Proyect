@@ -1,26 +1,50 @@
 <% if signed_in? %>
-  <table class="front" summary="Para usuarios conectados">
+
+<div id="content">
+  <table summary="Para usuarios conectados">
     <tr>
-      <td class="main">
-        <h1 class="micropost">¿Que hay de nuevo?</h1>
+      <td class="post">
+        <h1 class="title">¿Que hay de nuevo?
         <%= render 'shared/micropost_form' %>
+        </h1>
+        <div style="clear: both;">&nbsp;</div>
         <%= render 'shared/feed' %>
-      </td>
-      <td class="sidebar round">
-        <%= render 'shared/user_info' %>
-        <%= render 'shared/stats' %>
-      </td>
-    </tr>
+    </td>
   </table>
+</div>
+
+<div id="sidebar">
+      <%= render 'shared/user_info' %>
+      <%= render 'shared/stats' %>
+      <%= render 'shared/search' %>
+</div>
+
+
 <% else %>
-  <h1>Bienvenidos a Micropost</h1>
-  <p>
-    Únete a la comunidad de 
-    <a href="http://railstutorial.org/">Micropost</a>
-    y comparte con tus amigos lo que quieras.
-  </p>
 
-  <%= link_to "Únete ahora!", signup_path, :class => "signup_button round" %>
+  <div id="home">
+    <div class="text">
+      <h1>Bienvenidos a Micropost</h1>
+      <p align="center">
+        Únete a la comunidad de 
+        <a href="http://railstutorial.org/">Micropost</a>
+        y comparte con tus amigos lo que quieras.
+      </p>
+      <table>
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>     
+            <%= link_to "Únete ahora!", signup_path, :class => "signup_button round" %>
+          </td>     
+          <td>
+            <%= link_to "Iniciar sesión", signin_path, :class => "signup_button round" %>
+          </td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+      </table>    
+    </div>
+  </div>
+
 <% end %>
-
-

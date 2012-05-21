@@ -10,7 +10,7 @@ group :production, :staging do
 end
 
 group :development do
-  gem 'sqlite3', '1.3.5'
+  gem "sqlite3-ruby", :require => "sqlite3"
   gem 'rspec-rails', '2.8.1'
   gem 'annotate', '2.4.0'
   gem 'faker', '0.3.1'

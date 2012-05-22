@@ -1,6 +1,6 @@
 <tr>
   <td class="micropost">
-    <span class="content"><%= micropost.content %></span>
+    <span class="content"><%= format(micropost.content) %></span>
     <span class="timestamp">
       Posted <%= time_ago_in_words(micropost.created_at) %> ago.
     </span>
@@ -11,5 +11,7 @@
                                        :confirm => "¿Estás seguro?",
                                        :title => micropost.content %>
     </td>
+  <% else %>
+    <td></td>
   <% end %>
 </tr>

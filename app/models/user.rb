@@ -59,8 +59,6 @@ class User < ActiveRecord::Base
       find(:all)
     end
   end
-
-
   
   private
     def encrypt_password

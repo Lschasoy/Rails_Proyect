@@ -61,6 +61,13 @@ class UsersController < ApplicationController
     @users = @user.followers.paginate(:page => params[:page])
     render 'show_follow'
   end
+
+  def search
+    @projects = User.search(params[:search])
+  end
+
+
+  
   private
 
     def authenticate

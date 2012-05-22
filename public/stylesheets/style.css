@@ -613,6 +613,11 @@ a:hover {
         border-radius:         5px;
 }
 
+#follow_form {
+	margin:5px;
+	padding:10px;
+}
+
 /* Footer */
 
 #footer {

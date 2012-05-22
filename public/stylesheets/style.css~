@@ -607,10 +607,17 @@ a:hover {
 	background-color:#b3d6ff;
 	margin:5px;
 	padding:10px;
-	width:5400px;
+	width:540px;
 	-moz-border-radius:    5px;
         -webkit-border-radius: 5px;
         border-radius:         5px;
+}
+
+#follow_form {
+	float: right;
+	margin:5px;
+	padding:10px;
+	width:200px;
 }
 
 /* Footer */

@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.8em;
+	font-size: 20px;
 }
 
 h3 {
@@ -44,6 +44,26 @@ ul, ol {
 a {
 	text-decoration: none;
 	color: #339CCB;
+}
+
+tbody tr:nth-child(even) td, tbody tr.even td {
+  background:#e5ecf9;
+}
+
+table {
+  border-collapse:separate;
+  border-spacing:0;
+  vertical-align: middle;
+}
+
+caption, th, td {
+  text-align:left;
+  font-weight:normal;
+  float:none !important;
+}
+
+table, th, td {
+  vertical-align:middle;
 }
 
 a:hover {
@@ -211,7 +231,6 @@ a:hover {
 #singin {
 	float: center;
 	background-color:#a3c5ff;
-	height:250px;
 	margin:10px auto;
 	padding:10px;
 	width:330px;
@@ -225,7 +244,6 @@ a:hover {
 
 #singin .int{
 	background-color:#b3d6ff;
-	height:210px;
 	margin:5px;
 	padding:15px;
 	width:290px;
@@ -248,7 +266,6 @@ a:hover {
 #singup {
 	float: center;
 	background-color:#a3c5ff;
-	height:250px;
 	margin:10px auto;
 	padding:10px;
 	width:330px;
@@ -262,7 +279,6 @@ a:hover {
 
 #singup .int{
 	background-color:#b3d6ff;
-	height:210px;
 	margin:5px;
 	padding:15px;
 	width:290px;
@@ -285,7 +301,6 @@ a:hover {
 #edit {
 	float: center;
 	background-color:#a3c5ff;
-	height:360px;
 	margin:10px auto;
 	padding:10px;
 	width:330px;
@@ -299,7 +314,6 @@ a:hover {
 
 #edit .int{
 	background-color:#b3d6ff;
-	height:320px;
 	margin:5px;
 	padding:15px;
 	width:290px;
@@ -317,6 +331,30 @@ a:hover {
 	text-align: center;
 }
 
+/* Help */
+
+#help {
+	float: left;
+	background-color:#a3c5ff;
+	margin:5px;
+	padding:10px;
+	width:930px;
+	-moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+}
+
+#help .int{
+	float: left;
+	background-color:#b3d6ff;
+	margin:5px;
+	padding:10px;
+	width:900px;
+	-moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        border-radius:         5px;
+}
+
 /* Page */
 
 #page {
@@ -332,8 +370,24 @@ a:hover {
 
 #content {
 	float: left;
-	width: 650px;
-	padding: 0px 0px 0px 0px;
+	background-color:#a3c5ff;
+	margin:5px;
+	padding:10px;
+	width:570px;
+	-moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+}
+
+#content .int{
+	float: left;
+	background-color:#b3d6ff;
+	margin:5px;
+	padding:10px;
+	width:540px;
+	-moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        border-radius:         5px;
 }
 
 .post {
@@ -389,10 +443,26 @@ a:hover {
 
 #sidebar {
 	float: right;
-	width: 280px;
-	margin: 0px;
-	padding: 0px 20px 0px 0px;
 	color: #787878;
+	background-color:#a3c5ff;
+	margin:5px auto;
+	padding:10px;
+	width:330px;
+	-moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+}
+
+#sidebar .int{
+	color: #787878;
+	background-color:#b3d6ff;
+	margin:5px;
+	padding:15px;
+	width:290px;
+	float: right;
+	-moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        border-radius:         5px;
 }
 
 #sidebar ul {
@@ -481,10 +551,44 @@ a:hover {
 	text-align: right;
 }
 
+/* Users */
+
+#user {
+	float: left;
+	background-color:#a3c5ff;
+	margin:5px;
+	padding:10px;
+	width:930px;
+	-moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+}
+
+#user .int{
+	float: left;
+	background-color:#b3d6ff;
+	margin:5px;
+	padding:10px;
+	width:900px;
+	-moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        border-radius:         5px;
+}
+
+#user ul li a.delete {
+  background-color: #aaaadd;
+  color: black;
+  margin:5px;
+  padding:7px;
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+}
+
 /* Footer */
 
 #footer {
-	height: 50px;
+	height: 65px;
 	margin: 0 auto;
 	padding: 0px 0 15px 0;
 	background: #1582AB;
@@ -515,7 +619,7 @@ a.signup_button {
   text-align: center;
   width: 190px;
   color: #fff;
-  background: #006400;
+  background: #1582AB;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
@@ -567,7 +671,6 @@ div.field, div.actions {
 }
 
 #error_explanation {
-  width: 400px;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 12px;
@@ -595,13 +698,30 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
 ul.users {
   margin-top: 1em;
 }
 
 .users li {
   list-style: none;
+  vertical-align: middle;
+  font-size: 16px;
 }
+
+.users li img {
+	background-color:#a3c5ff;
+	margin:5px;
+	padding:3px;
+	-moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        border-radius:         5px;
+}
+
+.user li a {
+  vertical-align: center;
+}
+
 h1.micropost {
   margin-bottom: 0.3em;
 }
@@ -615,38 +735,32 @@ table.microposts tr {
 }
 
 table.microposts tr td.gravatar {
-  border-top: 1px solid #ccc;
   vertical-align: top;
   width: 50px;
 }
 
 table.microposts tr td.micropost {
-  border-top: 1px solid #ccc;
   vertical-align: top;
+  text-align: left;
   padding-top: 10px;
+  font-size: 14px;
 }
 
 table.microposts tr td.micropost span.timestamp {
   display: block;
-  font-size: 85%;
+  font-size: 11px;
   color: #666;
 }
 
-div.user_info img {
-  padding-right: 0.1em;
-}
-
-div.user_info a {
-  text-decoration: none;
-}
-
-div.user_info span.user_name {
-  position: absolute;
-}
-
-div.user_info span.microposts {
-  font-size: 80%;
-}
+table.microposts tr td a.delete {
+  background-color: #aaaadd;
+  color: black;
+  margin:5px;
+  padding:7px;
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+}  
 
 form.new_micropost {
   margin-bottom: 2em;
@@ -661,5 +775,10 @@ foto{
   padding-top: 0px;
   padding-bottom:0px;
   padding-right: 0px;
-  padding-left: 80px;
+  padding-left: 85px;
+}
+
+textarea#micropost_content {
+  width: 520px;
+  height: 40px;
 }

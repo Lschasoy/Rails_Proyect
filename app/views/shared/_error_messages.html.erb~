@@ -3,6 +3,7 @@
     <h2><%= pluralize(object.errors.count, "error") %> 
         ha impedido que este <%= object.class.to_s.underscore.humanize.downcase %> 
         sea almacenado con éxito:</h2>
+    <!--<p>There were problems with the following fields:</p>-->
     <ul>
     <% object.errors.full_messages.each do |msg| %>
       <li font-size="12px"><%= msg %></li>

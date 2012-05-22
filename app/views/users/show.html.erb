@@ -1,3 +1,6 @@
+<div id="content">
+<div id="content" class="int">
+
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
@@ -13,11 +16,17 @@
         <%= will_paginate @microposts %>
       <% end %>
     </td>
-    <td class="sidebar round">
-      <strong>Nombre</strong> <%= @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
-      <strong>Microposts</strong> <%= @user.microposts.count %>
-      <%= render 'shared/stats' %>
-    </td>
   </tr>
 </table>
+
+<div style="clear: both;">&nbsp;</div>
+</div>
+</div>
+
+<div id="sidebar">
+  <div id="sidebar" class="int">
+      <%= render 'shared/user_info' %>
+      <%= render 'shared/stats' %>
+      <%= render 'shared/search' %>
+  </div>
+</div>

@@ -17,7 +17,5 @@
                                        :confirm => "¿Estás seguro?",
                                        :title => feed_item.content %>
     </td>
-  <% else %>
-    <td></td>
   <% end %>
 </tr>

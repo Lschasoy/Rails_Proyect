@@ -1,22 +1,25 @@
 <% if signed_in? %>
 
 <div id="content">
-  <table summary="Para usuarios conectados">
-    <tr>
-      <td class="post">
+<div id="content" class="int">
+  <div summary="Para usuarios conectados" class="home">
+
         <h1 class="title">¿Que hay de nuevo?
         <%= render 'shared/micropost_form' %>
         </h1>
-        <div style="clear: both;">&nbsp;</div>
+        <h1 class="title">Últimos Posts</h1> 
         <%= render 'shared/feed' %>
-    </td>
-  </table>
+      
+  </div>
+  <div style="clear: both;">&nbsp;</div>
 </div>
-
+</div>
 <div id="sidebar">
+  <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>
       <%= render 'shared/stats' %>
       <%= render 'shared/search' %>
+  </div>
 </div>
 
 
@@ -48,14 +51,3 @@
   </div>
 
 <% end %>
-
-
-<!--<div class="post">
-	<h2 class="title"><a href="#">Consecteteur hendrerit </a></h2>
-	<p class="meta"><span class="date">May 10, 2010</span><span class="posted">Posted by <a href="#">Someone</a></span></p>
-	<div style="clear: both;">&nbsp;</div>
-	<div class="entry">
-		<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus ut, lobortis a, est.</p>
-		<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comments</a></p>
-	</div>
-</div>-->

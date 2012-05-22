@@ -1,3 +1,6 @@
+<div id="content">
+<div id="content" class="int">
+
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
@@ -5,10 +8,25 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
-    </td>
-    <td class="sidebar round">
-      <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <%= render 'follow_form' if signed_in? %>
+      <% unless @user.microposts.empty? %>
+        <table class="microposts" summary="User microposts">
+          <%= render @microposts %>
+        </table>
+        <%= will_paginate @microposts %>
+      <% end %>
     </td>
   </tr>
 </table>
+
+<div style="clear: both;">&nbsp;</div>
+</div>
+</div>
+
+<div id="sidebar">
+  <div id="sidebar" class="int">
+      <%= render 'shared/user_info' %>
+      <%= render 'shared/stats' %>
+      <%= render 'shared/search' %>
+  </div>
+</div>

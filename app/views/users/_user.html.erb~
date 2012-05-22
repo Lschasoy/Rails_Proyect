@@ -1,5 +1,5 @@
 <li>
-  <table>
+  <table style="margin: auto;">
     <tbody>
       <tr>
         <td><%= gravatar_for user, :size => 30 %></td>

@@ -11,14 +11,12 @@
 
       <div id="page">
 	<div id="page-bgtop">
-	  <div id="page-bgbtm">
 
 	      <% flash.each do |key, value| %>
 		<div class="flash <%= key %>"><%= value %></div>
 	      <% end %>
 	      <%= yield %>
 	    
-	  </div>
 	</div>
       </div>
       <div style="clear: both;">&nbsp;</div>

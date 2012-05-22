@@ -4,6 +4,7 @@ gem 'rails', '3.0.0'
 # gem 'sqlite3', '1.3.5'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
+gem 'pg'
 
 group :development do
   gem "sqlite3-ruby", :require => "sqlite3"

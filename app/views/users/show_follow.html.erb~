@@ -9,7 +9,7 @@
         </ul>
         <%= will_paginate @users %>
       <% end %>
-     </div>
+    </div>
    </div>
 </div>
 

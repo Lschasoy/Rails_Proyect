@@ -589,6 +589,30 @@ a:hover {
   border-radius:         5px;
 }
 
+/* Follow */
+
+#follow {
+	float: left;
+	background-color:#a3c5ff;
+	margin:5px;
+	padding:10px;
+	width:570px;
+	-moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+}
+
+#follow .int{
+	float: left;
+	background-color:#b3d6ff;
+	margin:5px;
+	padding:10px;
+	width:540px;
+	-moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        border-radius:         5px;
+}
+
 /* Footer */
 
 #footer {

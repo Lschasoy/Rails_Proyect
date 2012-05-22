@@ -66,6 +66,10 @@ table, th, td {
   vertical-align:middle;
 }
 
+th, td, caption {
+  padding:4px 10px 4px 5px;
+}
+
 a:hover {
 }
 
@@ -583,6 +587,30 @@ a:hover {
   -moz-border-radius:    5px;
   -webkit-border-radius: 5px;
   border-radius:         5px;
+}
+
+/* Follow */
+
+#follow {
+	float: left;
+	background-color:#a3c5ff;
+	margin:5px;
+	padding:10px;
+	width:570px;
+	-moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+}
+
+#follow .int{
+	float: left;
+	background-color:#b3d6ff;
+	margin:5px;
+	padding:10px;
+	width:5400px;
+	-moz-border-radius:    5px;
+        -webkit-border-radius: 5px;
+        border-radius:         5px;
 }
 
 /* Footer */

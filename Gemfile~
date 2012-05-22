@@ -5,10 +5,6 @@ gem 'rails', '3.0.0'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
 
-group :production, :staging do
-  gem "pg"
-end
-
 group :development do
   gem "sqlite3-ruby", :require => "sqlite3"
   gem 'rspec-rails', '2.8.1'
@@ -21,6 +17,12 @@ group :test do
   gem 'webrat', '0.7.3'
   gem 'factory_girl_rails', '1.0'
 end
+
+group :production do
+# gems specifically for Heroku go here  
+   gem 'pg'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

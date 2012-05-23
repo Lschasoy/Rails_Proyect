@@ -51,6 +51,7 @@ module ApplicationHelper
   end
   
   def stylesheet(user)
+   if user.is_a?(User)
     if user.color == "blue"
       "/stylesheets/style_blue.css"
     else
@@ -68,6 +69,11 @@ module ApplicationHelper
 	end
       end
     end
+   else
+     "/stylesheets/style.css"
+   end
   end
+
+  WillPaginate.per_page = 10
   
 end

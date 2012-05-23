@@ -14,7 +14,7 @@
         <table class="microposts" summary="User microposts">
           <%= render @microposts %>
         </table>
-        <%= will_paginate @microposts %>
+        <div id="pagination"><%= will_paginate @microposts, :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
       <% end %>
     </td>
   </tr>

@@ -5,12 +5,12 @@ class UsersController < ApplicationController
   before_filter :admin_user,   :only => :destroy
   def index
     @title = "Todos los usuarios"
-    @users = User.paginate(:page => params[:page])
+    @users = User.paginate(:page => params[:page], :per_page => 10)
   end
 
   def show
     @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(:page => params[:page])
+    @microposts = @user.microposts.paginate(:page => params[:page], :per_page => 10)
     @title = @user.name
   end
 
@@ -51,22 +51,20 @@ class UsersController < ApplicationController
   def following
     @title = "Siguiendo"
     @user = User.find(params[:id])
-    @users = @user.following.paginate(:page => params[:page])
+    @users = @user.following.paginate(:page => params[:page], :per_page => 10)
     render 'show_follow'
   end
 
   def followers
     @title = "Seguidores"
     @user = User.find(params[:id])
-    @users = @user.followers.paginate(:page => params[:page])
+    @users = @user.followers.paginate(:page => params[:page], :per_page => 10)
     render 'show_follow'
   end
 
   def search
     @projects = User.search(params[:search])
   end
-
-
   
   private
 

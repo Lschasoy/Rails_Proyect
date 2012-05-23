@@ -836,3 +836,16 @@ textarea#micropost_content {
   width: 520px;
   height: 40px;
 }
+
+/* Pagination */
+
+#pagination {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.pagination {
+  margin: 0px auto;
+}

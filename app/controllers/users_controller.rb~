@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(:page => params[:page])
+    @microposts = @user.microposts.paginate(:page => params[:page], :per_page => 10)
     @title = @user.name
   end
 
@@ -63,7 +63,7 @@ class UsersController < ApplicationController
   end
 
   def search
-    @grants = User.search params[:search]
+    @projects = User.search(params[:search])
   end
   
   private

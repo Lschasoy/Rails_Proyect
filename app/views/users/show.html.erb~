@@ -9,14 +9,12 @@
         <%= @user.name %>
         <%= render 'follow_form' if signed_in? %>
       </h1>
-      <%= if @user.color == "blue" %>
-  <%= stylesheet_link_tag 'style_blue', :media => 'screen' %>
-<%end %>
+      
       <% unless @user.microposts.empty? %>
         <table class="microposts" summary="User microposts">
           <%= render @microposts %>
         </table>
-        <%= will_paginate @microposts %>
+        <div id="pagination"><%= will_paginate @microposts, :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :link_separator => "  " %></div>
       <% end %>
     </td>
   </tr>

@@ -601,7 +601,7 @@ a:hover {
 }
 
 #user ul li a.delete {
-  background-color: #aaaadd;
+  background-color: #ddb0ac;
   color: black;
   margin:5px;
   padding:7px;
@@ -807,7 +807,7 @@ table.microposts tr td.micropost span.timestamp {
 }
 
 table.microposts tr td a.delete {
-  background-color: #aaaadd;
+  background-color: #ddb0ac;
   color: black;
   margin:5px;
   padding:7px;
@@ -835,4 +835,19 @@ foto{
 textarea#micropost_content {
   width: 520px;
   height: 40px;
+}
+
+/* Pagination */
+
+#pagination {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 13px;
+  font: bold;
+}
+
+.pagination {
+  margin: 0px auto;
 }

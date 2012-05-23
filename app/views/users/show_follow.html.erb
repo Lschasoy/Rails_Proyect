@@ -7,7 +7,7 @@
         <ul class="users">
           <%= render @users %>
         </ul>
-        <%= will_paginate @users %>
+        <div id="pagination"><%= will_paginate @users, :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
       <% end %>
      </div>
    </div>

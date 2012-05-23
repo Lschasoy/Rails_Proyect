@@ -3,17 +3,18 @@
 
 <h1>Todos los usuarios</h1>
 
-<%= will_paginate %>
+<div id="pagination"><%= will_paginate :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
 
 <ul class="users">
   <%= render @users %>
 </ul>
 
-<%= will_paginate %>
+<div id="pagination"><%= will_paginate :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
 
 </div>
 </div>
 
+<div id="side">
 <div id="sidebar">
   <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>
@@ -24,4 +25,5 @@
   <div id="sidebar" class="int">
     <%= render 'shared/search' %>
   </div>
+</div>
 </div>

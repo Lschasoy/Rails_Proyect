@@ -3,13 +3,13 @@
 
 <h1>Todos los usuarios</h1>
 
-<%= will_paginate %>
+<div id="pagination" style="padding-top: 20px;"><%= will_paginate :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
 
 <ul class="users">
   <%= render @users %>
 </ul>
 
-<%= will_paginate %>
+<div id="pagination"><%= will_paginate :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
 
 </div>
 </div>

@@ -3,5 +3,5 @@
   <table class="microposts" summary="User microposts">
     <%= render :partial => 'shared/feed_item', :collection => @feed_items %>
   </table>
-  <%= will_paginate @feed_items %>
+  <div id="pagination"><%= will_paginate @feed_items, :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
 <% end %>

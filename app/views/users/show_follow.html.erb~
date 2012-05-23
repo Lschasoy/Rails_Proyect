@@ -7,7 +7,7 @@
         <ul class="users">
           <%= render @users %>
         </ul>
-        <%= will_paginate @users %>
+        <div id="pagination"><%= will_paginate @users, :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :link_separator => "  " %></div>
       <% end %>
      </div>
    </div>
@@ -19,9 +19,11 @@
       <%= render 'shared/user_info' %>
       <%= render 'shared/stats' %>
       <% unless @users.empty? %>
+        <div>
         <% @users.each do |user| %>
           <%= link_to gravatar_for(user, :size => 30), user %>
         <% end %>
+        </div>
       <% end %>
   </div>
 </div>

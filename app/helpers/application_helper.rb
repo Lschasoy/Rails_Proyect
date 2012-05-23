@@ -50,10 +50,28 @@ module ApplicationHelper
     end
   end
   
-  def stylesheet(color)
-    if color == "blue"
-      "/stylesheets/style.css"
+  def stylesheet(user)
+   if user.is_a?(User)
+    if user.color == "blue"
+      "/stylesheets/style_blue.css"
+    else
+      if user.color == "red"
+        "/stylesheets/style_red.css"
+      else
+        if user.color == "green"
+          "/stylesheets/style_green.css"
+	else
+          if user.color == "yellow"
+            "/stylesheets/style_yellow.css"
+	  else
+	    "/stylesheets/style.css"
+	  end
+	end
+      end
     end
+   else
+     "/stylesheets/style.css"
+   end
   end
   
 end

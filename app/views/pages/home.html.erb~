@@ -14,12 +14,18 @@
   <div style="clear: both;">&nbsp;</div>
 </div>
 </div>
+<div id="side">
 <div id="sidebar">
   <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>
       <%= render 'shared/stats' %>
-      <%= render 'shared/search' %>
   </div>
+</div>
+<div id="sidebar">
+  <div id="sidebar" class="int">
+    <%= render 'shared/search' %>
+  </div>
+</div>
 </div>
 
 

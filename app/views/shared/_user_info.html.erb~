@@ -1,6 +1,7 @@
+<% @user ||= current_user %>
 <foto>
-  <a href="<%= user_path(current_user) %>"> 
-    <%= gravatar_for current_user, :size => 160 %> 
+  <a href="<%= user_path(@user) %>"> 
+    <%= gravatar_for current_user, :size => 120 %> 
   </a>
 </foto>
 <h1><%= current_user.name %></h1>

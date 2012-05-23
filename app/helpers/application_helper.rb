@@ -17,7 +17,7 @@ module ApplicationHelper
    def formato(str)
     codigo = ""
     code = ""
-    str.gsub (/www\.youtube\.com\/watch\?v\=.*$/) do |url|
+    str.gsub (/youtube\.com\/watch\?v\=.*$/) do |url|
       codigo = url
       '#{url}'
     end
@@ -35,7 +35,7 @@ module ApplicationHelper
   def formatear(str)
     codigo = ""
     code = ""
-    str.gsub (/www\.youtube\.com\/watch\?v\=.*$/) do |url|
+    str.gsub (/youtube\.com\/watch\?v\=.*$/) do |url|
       codigo = url
       '#{url}'
     end

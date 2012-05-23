@@ -1,3 +1,4 @@
+
 <% unless @feed_items.empty? %>
   <h2 class="title">Últimos Posts</h2>
   <table class="microposts" summary="User microposts">

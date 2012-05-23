@@ -7,8 +7,9 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        <%= render 'follow_form' if signed_in? %>
       </h1>
-      <%= render 'follow_form' if signed_in? %>
+      
       <% unless @user.microposts.empty? %>
         <table class="microposts" summary="User microposts">
           <%= render @microposts %>
@@ -22,11 +23,16 @@
 <div style="clear: both;">&nbsp;</div>
 </div>
 </div>
-
+<div float="rigth">
 <div id="sidebar">
   <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>
       <%= render 'shared/stats' %>
-      <%= render 'shared/search' %>
   </div>
+</div>
+<div id="sidebar">
+  <div id="sidebar" class="int">
+    <%= render 'shared/search' %>
+  </div>
+</div>
 </div>

@@ -9,19 +9,25 @@
         </ul>
         <%= will_paginate @users %>
       <% end %>
-    </div>
+     </div>
    </div>
 </div>
 
+<div id="side">
 <div id="sidebar">
   <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>
       <%= render 'shared/stats' %>
-      <%= render 'shared/search' %>
       <% unless @users.empty? %>
         <% @users.each do |user| %>
           <%= link_to gravatar_for(user, :size => 30), user %>
         <% end %>
       <% end %>
   </div>
+</div>
+<div id="sidebar">
+  <div id="sidebar" class="int">
+    <%= render 'shared/search' %>
+  </div>
+</div>
 </div>

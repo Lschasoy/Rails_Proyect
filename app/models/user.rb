@@ -21,8 +21,7 @@ class User < ActiveRecord::Base
   validates :email, :presence   => true,
                     :format     => { :with => email_regex },
                     :uniqueness => { :case_sensitive => false }
-  validates :color, :presence => true,
-                    :length   => { :maximum => 10 }
+  validates :color, :length   => { :maximum => 10 }
   before_save :encrypt_password  
   # Return true if the user's password matches the submitted password.
   def has_password?(submitted_password)

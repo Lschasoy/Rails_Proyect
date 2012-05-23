@@ -601,7 +601,7 @@ a:hover {
 }
 
 #user ul li a.delete {
-  background-color: #aaaadd;
+  background-color: #dddaaa;
   color: black;
   margin:5px;
   padding:7px;
@@ -807,7 +807,7 @@ table.microposts tr td.micropost span.timestamp {
 }
 
 table.microposts tr td a.delete {
-  background-color: #aaaadd;
+  background-color: #dddaaa;
   color: black;
   margin:5px;
   padding:7px;

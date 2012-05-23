@@ -234,7 +234,7 @@ a:hover {
 
 #singin {
 	float: center;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:10px auto;
 	padding:10px;
 	width:330px;
@@ -247,7 +247,7 @@ a:hover {
 }
 
 #singin .int{
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:15px;
 	width:290px;
@@ -269,7 +269,7 @@ a:hover {
 
 #singup {
 	float: center;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:10px auto;
 	padding:10px;
 	width:330px;
@@ -282,7 +282,7 @@ a:hover {
 }
 
 #singup .int{
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:15px;
 	width:290px;
@@ -304,7 +304,7 @@ a:hover {
 
 #edit {
 	float: center;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:10px auto;
 	padding:10px;
 	width:330px;
@@ -317,7 +317,7 @@ a:hover {
 }
 
 #edit .int{
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:15px;
 	width:290px;
@@ -339,7 +339,7 @@ a:hover {
 
 #help {
 	float: left;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:5px;
 	padding:10px;
 	width:930px;
@@ -350,7 +350,7 @@ a:hover {
 
 #help .int{
 	float: left;
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:10px;
 	width:900px;
@@ -374,7 +374,7 @@ a:hover {
 
 #content {
 	float: left;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:5px;
 	padding:10px;
 	width:570px;
@@ -385,7 +385,7 @@ a:hover {
 
 #content .int{
 	float: left;
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:10px;
 	width:540px;
@@ -459,7 +459,7 @@ a:hover {
 #sidebar {
 	float: right;
 	color: #787878;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:5px auto;
 	margin-bottom: 20px;
 	padding:10px;
@@ -471,7 +471,7 @@ a:hover {
 
 #sidebar .int{
 	color: #787878;
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:15px;
 	width:290px;
@@ -482,7 +482,7 @@ a:hover {
 }
 
 .int div a img {
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:5px;
 	padding:3px;
 	-moz-border-radius:    5px;
@@ -580,7 +580,7 @@ a:hover {
 
 #user {
 	float: left;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:5px;
 	padding:10px;
 	width:570px;
@@ -591,7 +591,7 @@ a:hover {
 
 #user .int{
 	float: left;
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:10px;
 	width:540px;
@@ -614,7 +614,7 @@ a:hover {
 
 #follow {
 	float: left;
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:5px;
 	padding:10px;
 	width:570px;
@@ -625,7 +625,7 @@ a:hover {
 
 #follow .int{
 	float: left;
-	background-color:#b3d6ff;
+	background-color:#ffc3b8;
 	margin:5px;
 	padding:10px;
 	width:540px;
@@ -764,7 +764,7 @@ ul.users {
 }
 
 .users li img {
-	background-color:#a3c5ff;
+	background-color:#ffa29c;
 	margin:5px;
 	padding:3px;
 	-moz-border-radius:    5px;

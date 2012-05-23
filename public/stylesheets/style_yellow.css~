@@ -657,7 +657,7 @@ a:hover {
 	font-size: 9px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #FFFFFF;
+	color: #000000;
 }
 
 #footer a {
@@ -807,7 +807,7 @@ table.microposts tr td.micropost span.timestamp {
 }
 
 table.microposts tr td a.delete {
-  background-color: #aaaadd;
+  background-color: #dddaaa;
   color: black;
   margin:5px;
   padding:7px;

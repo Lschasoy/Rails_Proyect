@@ -21,15 +21,26 @@
     <%= f.label :password_confirmation, "Confirmacion" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
+  <div class="field">
+    <%= f.label :color, "Color del perfil personalizado" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="red"/>
+    <%= f.label :color, "Rojo" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="blue" checked="true" />
+    <%= f.label :color, "Azul" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="green"/>
+    <%= f.label :color, "Verde" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="wellow"/>
+    <%= f.label :color, "Amarillo" %><br />
+  </div>  
   <div class="actions">
     <%= f.submit "Actualizar" %>
   </div>
 <% end %>
 
-<div>
+<!--<div>
   <%= gravatar_for @user %>
   <a href="http://gravatar.com/emails">change</a>
-</div>
+</div>-->
 
 </div>
 </div>

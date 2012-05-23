@@ -4,4 +4,5 @@
 <!-- <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %> -->
 <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
 <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-<%= stylesheet_link_tag 'style', :media => 'screen' %>
+<% @user ||= current_user %>
+<link href="<%= stylesheet(@user.color) %>" rel="stylesheet" type="text/css" />

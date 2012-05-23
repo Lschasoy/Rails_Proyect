@@ -21,10 +21,21 @@
     <%= f.label :password_confirmation, "Confirmar password" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
+  <div class="field">
+    <%= f.label :color, "Color del perfil personalizado" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="red"/>
+    <%= f.label :color, "Rojo" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="blue" checked="true" />
+    <%= f.label :color, "Azul" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="green"/>
+    <%= f.label :color, "Verde" %><br />
+    <br><input id="user_color" name="user[color]" type="radio" value="yellow"/>
+    <%= f.label :color, "Amarillo" %><br />
+  </div>
   <div class="actions">
     <%= f.submit "Registrarse" %>
   </div>
 <% end %>
 
-</div>
+  </div>
 </div>

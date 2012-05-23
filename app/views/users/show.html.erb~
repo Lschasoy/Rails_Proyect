@@ -9,7 +9,9 @@
         <%= @user.name %>
         <%= render 'follow_form' if signed_in? %>
       </h1>
-      
+      <%= if @user.color == "blue" %>
+  <%= stylesheet_link_tag 'style_blue', :media => 'screen' %>
+<%end %>
       <% unless @user.microposts.empty? %>
         <table class="microposts" summary="User microposts">
           <%= render @microposts %>
@@ -23,7 +25,7 @@
 <div style="clear: both;">&nbsp;</div>
 </div>
 </div>
-<div float="rigth">
+<div id="side">
 <div id="sidebar">
   <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>

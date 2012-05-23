@@ -50,4 +50,10 @@ module ApplicationHelper
     end
   end
   
+  def stylesheet(color)
+    if color == "blue"
+      "/stylesheets/style.css"
+    end
+  end
+  
 end

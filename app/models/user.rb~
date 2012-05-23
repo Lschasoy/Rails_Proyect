@@ -21,6 +21,8 @@ class User < ActiveRecord::Base
   validates :email, :presence   => true,
                     :format     => { :with => email_regex },
                     :uniqueness => { :case_sensitive => false }
+  validates :color, :presence => true,
+                    :length   => { :maximum => 10 }
   before_save :encrypt_password  
   # Return true if the user's password matches the submitted password.
   def has_password?(submitted_password)
@@ -59,24 +61,6 @@ class User < ActiveRecord::Base
       find(:all)
     end
   end
-
-#   def formatear(str)
-#     codigo = ""
-#     code = ""
-#     final = ""
-#     embed = "<object width=\"560\" height=\"315\"><param name=\"movie\" value=\"http://www.youtube.com/v/"
-#     embed2 = "?version=3&amp;hl=es_ES&amp;rel=0\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/"
-#     embed3 = "?version=3&amp;hl=es_ES&amp;rel=0\" type=\"application/x-shockwave-flash\" width=\"560\" height=\"315\" allowscriptaccess=\"always\" allowfullscreen=\"true\"></embed></object>"
-#     str.gsub (/www\.youtube\.com\/watch\?v\=.*$/) do |url|
-#       codigo = url
-#       '#{url}'
-#     end
-#     codigo.gsub(/\?v\=.*$/) do |sec|
-#       code = sec[4..-1]
-#       'sec'
-#     end
-#     final = "#{embed}#{code}#{embed2}#{code}#{embed3}"
-#   end
   
   private
     def encrypt_password

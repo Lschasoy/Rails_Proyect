@@ -6,6 +6,7 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
 gem 'pg'
 gem 'faker', '0.3.1'
+gem 'actionmailer','3.0.0'
 
 group :development do
   gem "sqlite3-ruby", :require => "sqlite3"

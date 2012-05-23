@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Bienvenido a Micropost!</h1>
+    <p>
+      Usted ha completado su registro con éxito en Micropost,
+      su nombre de usuario es: <%= @user.name %>.<br/>
+    </p>
+    <p>
+      Para acceder a su perfil, sigua el enlace: pure-galaxy-5966.herokuapp.com/users/<%= @user.id %>
+    </p>
+    <p>Gracias por unirse!</p>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+Sergio  - 21/05 - Comienzo de las modificaciones de las hojas de estilo. Descargada una plantilla desde http://www.freecsstemplates.org/preview/regeneracy/
+Sergio  - 21/05 - Estructurado el header, footer y menu de la página
+Sergio  - 21/05 - Modificación de los test para dar soporte a las nuevas plantillas de hojas de estilo
+Rodrigo - 21/05 - Modificado Gemfile. Anadida gema 'gravatar' al bloque de desarrollo para el soporte y generación de imagenes de parfil
+Rodrigo - 21/05 - Implementada la generación aleatoria de imágenes de perfil
+Sergio  - 21/05 - Modificado Gemfile. Añadida gema 'pg' para el soporte y manejo de base de datos en Heroku. Se mueve la gema 'sqlite3' al bloqe de desarrollo para evitar conflictos con heroku
+Sergio  - 21/05 - Creado el servidor en Heroku y montada la aplicacion
+Sergio  - 22/05 - Terminada la hoja de estilo, añadiendo estilos para containers y sidebars
+Sergio  - 22/05 - Implementación de videos en youtube. Se procesan los post antes de mostrar para generar un objeto embebido
+Sergio  - 22/05 - Añadido formulario de búsqueda. Solo parte visual
+Sergio  - 23/05 - Modificado Gemfile. Añadida gema 'faker' para la creación de usuarios alatorios en el servidor.
+Usuario - 23/05 - Realización de pruebas del estado actual de la página. Busqueda de errores y correcion de los mismos.
+Sergio  - 23/05 - Modificación del modelo de usuarios, controlador y ficheros varios para la implementacion de una nueva funcionalidad: eleccion de color de fondo y estilo de pagina
+Sergio  - 23/05 - Creación de nuevas hojas de estilo, con configuraciones diferentes para cada usuario.
+Sergio  - 23/05 - Migración de las nuevas tablas y actualizacion de los campos
+Sergio  - 23/05 - Reinicio del servidor y la base de datos
+Rodrigo - 23/05 - Implementacion de las modificaciones para añadir la propiedad de administrador a los usuarios
+Rodrigo - 23/05 - Creación del nuevo modelo de usuario y de los ficheros de migración correspondientes
+Rodrigo - 23/05 - Migración de la base de datos par actualizar los campos
+Uriel - 24/05 - Implementado ActionMailer
+Uriel - 24/05 - (...)

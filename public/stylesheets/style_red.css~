@@ -845,7 +845,7 @@ textarea#micropost_content {
   padding-bottom: 10px;
   text-align: center;
   font-size: 13px;
-  font: bold;
+  font-weight: bold;
 }
 
 .pagination {

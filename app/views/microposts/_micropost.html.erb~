@@ -12,16 +12,16 @@
           <param name="movie" value="<%= formato(micropost.content) %>?version=3&amp;hl=es_ES&amp;rel=0"></param>
           <param name="allowFullScreen" value="true"></param>
           <param name="allowscriptaccess" value="always"></param>
-          <embed src="<%= formato(feed_item.content) %>?version=3&amp;hl=es_ES&amp;rel=0" type="application/x-shockwave-flash" width="365" height="205" allowscriptaccess="always" allowfullscreen="true"></embed>
+          <embed src="<%= formato(micropost.content) %>?version=3&amp;hl=es_ES&amp;rel=0" type="application/x-shockwave-flash" width="365" height="205" allowscriptaccess="always" allowfullscreen="true"></embed>
         </object>
       </span>
       <p></p>
     <% end%>
     <span class="timestamp">
-      Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
+      Posted <%= time_ago_in_words(micropost.created_at) %> ago.
     </span>
   </td>
-  <% if current_user?(micropost.user) %>
+  <% if current_user?(micropost.user)||current_user.admin? %>
     <td class="delete">
       <%= link_to "Eliminar", micropost, :method => :delete, :class => :delete,
                                        :confirm => "¿Estás seguro?",

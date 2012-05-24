@@ -19,5 +19,3 @@ Rodrigo - 23/05 - Creación del nuevo modelo de usuario y de los ficheros de migr
 Rodrigo - 23/05 - Migración de la base de datos par actualizar los campos
 Uriel   - 24/05 - Implementado ActionMailer
 Uriel   - 24/05 - (...)
-Sergio  - 24/05 - Creados archivos de generación de usurios con categoría de administrador
-Sergio  - 24/05 - Actualizadas hojas de estilo para entorno de Administrador

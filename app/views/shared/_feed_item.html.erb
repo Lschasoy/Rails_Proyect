@@ -27,7 +27,7 @@
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>
   </td>
-  <% if current_user?(feed_item.user) %>
+  <% if (current_user?(feed_item.user)||current_user.admin?) %>
     <td class="delete">
       <%= link_to "Eliminar", feed_item, :method => :delete, :class => :delete,
                                        :confirm => "¿Estás seguro?",

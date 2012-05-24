@@ -21,7 +21,7 @@
       Posted <%= time_ago_in_words(micropost.created_at) %> ago.
     </span>
   </td>
-  <% if current_user?(micropost.user) %>
+  <% if (current_user?(micropost.user)||current_user.admin?) %>
     <td class="delete">
       <%= link_to "Eliminar", micropost, :method => :delete, :class => :delete,
                                        :confirm => "¿Estás seguro?",

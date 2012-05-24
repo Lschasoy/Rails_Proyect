@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
   end
 
   def follow!(followed)
-    UserMailer.new_follower(self,followed).deliver
+#      UserMailer.new_follower(self,followed).deliver
     relationships.create!(:followed_id => followed.id)
   end
 

@@ -29,7 +29,9 @@
     <%= f.label :color, "Azul" %><br />
     <br><input id="user_color" name="user[color]" type="radio" value="green"/>
     <%= f.label :color, "Verde" %><br />
-    <br><input id="user_color" name="user[color]" type="radio" value="wellow"/>
+    <br><input id="user_color" name="user[color]" type="radio" value="yellow"/>
+    <%= f.label :color, "Amarillo" %><br />
+    <br><input id="user_notification" name="user[notification]" type="checkbox" value="0" checked="checked" />
     <%= f.label :color, "Amarillo" %><br />
   </div>
   <div class="actions">

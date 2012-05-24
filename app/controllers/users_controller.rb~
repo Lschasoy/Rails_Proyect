@@ -21,7 +21,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-#       UserMailer.welcome_email(@user).deliver
+      if @user.notification == 1 
+        UserMailer.welcome_email(@user).deliver
+      end
       sign_in @user
       flash[:success] = "Bienvenido a Micropost!"
       redirect_to @user

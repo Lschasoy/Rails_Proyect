@@ -31,8 +31,8 @@
     <%= f.label :color, "Verde" %><%= render 'shared/paleta', :color => "green" %><br />
     <br><input id="user_color" name="user[color]" type="radio" value="yellow"/>
     <%= f.label :color, "Amarillo" %><%= render 'shared/paleta', :color => "yellow" %><br />
-    <br><input id="user_notification" name="user[notification]" type="checkbox" value="0" checked="checked" />
-    <%= f.label :notification, "No recibir notificaciones en mi correo" %><br />
+    <br><input name="user[notification]" type="hidden" value="0" /><input id="user_notification" name="user[notification]" type="checkbox" value="1" <%=  notification(@user)%>/>
+    <%= f.label :notification, "Recibir notificaiones por correo" %><br />
   </div>  
   <div class="actions">
     <%= f.submit "Actualizar" %>

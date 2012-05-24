@@ -76,21 +76,29 @@ module ApplicationHelper
   
   def paleta(color)
     if color == "blue"
-      "azul"
+      "blue"
     else
       if color == "red"
-        "rojo"
+        "red"
       else
         if color == "green"
-          "verde"
+          "green"
 	else
           if color == "yellow"
-            "amarillo"
+            "yellow"
 	  else
 	    "default"
 	  end
 	end
       end
+    end
+  end
+
+  def notification(user)
+    if user.notification == "1"
+      "yes"
+    else
+      "no"
     end
   end
   

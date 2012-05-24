@@ -93,5 +93,13 @@ module ApplicationHelper
       end
     end
   end
+
+  def notification(user)
+    if user.notification == "1"
+      "checked"
+    else
+      ""
+    end
+  end
   
 end

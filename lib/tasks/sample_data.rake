@@ -10,7 +10,7 @@ end
 
 def make_users
   admin = User.create!(:name => "ADMIN",
-                       :email => "admin.micropost@gmail.com",
+                       :email => "micropost.ull@gmail.com",
                        :color => "red",
                        :password => "admin1234",
                        :password_confirmation => "admin1234")

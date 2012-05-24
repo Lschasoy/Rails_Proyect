@@ -1,0 +1,4 @@
+Nombre: ADMIN
+Email: micropost.ull@gmail.com
+Contraseña: admin1234
+Color: red

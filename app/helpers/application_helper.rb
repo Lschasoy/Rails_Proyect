@@ -74,4 +74,24 @@ module ApplicationHelper
    end
   end
   
+  def paleta(color)
+    if color == "blue"
+      "blue"
+    else
+      if color == "red"
+        "red"
+      else
+        if color == "green"
+          "green"
+	else
+          if color == "yellow"
+            "yellow"
+	  else
+	    "default"
+	  end
+	end
+      end
+    end
+  end
+  
 end

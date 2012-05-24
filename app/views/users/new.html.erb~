@@ -31,8 +31,8 @@
     <%= f.label :color, "Verde" %><br />
     <br><input id="user_color" name="user[color]" type="radio" value="yellow"/>
     <%= f.label :color, "Amarillo" %><br />
-    <br><input id="user_notification" name="user[notification]" type="checkbox" value="0" checked="checked" />
-    <%= f.label :color, "Amarillo" %><br />
+    <br><input id="user_notification" name="user[notification]" type="checkbox" value="0" />
+    <%= f.label :notification, "No recibir notificaciones en mi correo" %><br />
   </div>
   <div class="actions">
     <%= f.submit "Registrarse" %>

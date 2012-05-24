@@ -73,7 +73,25 @@ module ApplicationHelper
      "/stylesheets/style.css"
    end
   end
-
-  WillPaginate.per_page = 10
+  
+  def paleta(color)
+    if color == "blue"
+      "azul"
+    else
+      if color == "red"
+        "rojo"
+      else
+        if color == "green"
+          "verde"
+	else
+          if color == "yellow"
+            "amarillo"
+	  else
+	    "default"
+	  end
+	end
+      end
+    end
+  end
   
 end

@@ -51,6 +51,9 @@ class User < ActiveRecord::Base
   end
 
   def unfollow!(followed)
+    if followed.notification == "1" 
+      UserMailer.unfollow_advice(self,followed).deliver
+    end
     relationships.find_by_followed_id(followed).destroy
   end
   def feed

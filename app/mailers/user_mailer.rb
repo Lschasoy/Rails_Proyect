@@ -12,4 +12,10 @@ class UserMailer < ActionMailer::Base
     mail(:to => @user_followed.email, :subject => "Tiene un nuevo seguidor!")
   end
 
+  def unfollow_advice(user,user_followed)
+    @user = user
+    @user_followed = user_followed
+    mail(:to => @user_followed.email, :subject => "Un usuario ha dejado de seguirle")
+  end
+
 end

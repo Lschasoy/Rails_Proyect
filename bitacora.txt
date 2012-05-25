@@ -26,5 +26,6 @@ Uriel   - 24/05 - Implementado ActionMailer
 Uriel   - 24/05 - Creada y configurada cuenta de correo que generará los emails para los usuarios
 Uriel   - 24/05 - Implementada función: enviar email después de registro
 Uriel   - 24/05 - Implementada función: enviar email después de ganar un nuevo follower
+Uriel   - 24/05 - Implementada función: enviar email después de perder un follower
 Sergio  - 24/05 - Creados archivos de generación de usurios con categoría de administrador
 Sergio  - 24/05 - Actualizadas hojas de estilo para entorno de Administrador

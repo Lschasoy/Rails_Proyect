@@ -1,3 +1,8 @@
+Uriel   - 18/04 - Implementada función de registro en la web
+Uriel   - 25/04 - Implementadas funciones de acceso y salida de la web (para usuarios con cuenta)
+Uriel   - 02/05 - Implementadas funciones de actualizar, mostrar y borrar usuarios
+Uriel   - 19/05 - Implementados micropost de los usuarios
+Uriel   - 20/05 - Implementada función de "seguir"
 Sergio  - 21/05 - Comienzo de las modificaciones de las hojas de estilo. Descargada una plantilla desde http://www.freecsstemplates.org/preview/regeneracy/
 Sergio  - 21/05 - Estructurado el header, footer y menu de la página
 Sergio  - 21/05 - Modificación de los test para dar soporte a las nuevas plantillas de hojas de estilo
@@ -18,6 +23,8 @@ Rodrigo - 23/05 - Implementacion de las modificaciones para añadir la propiedad 
 Rodrigo - 23/05 - Creación del nuevo modelo de usuario y de los ficheros de migración correspondientes
 Rodrigo - 23/05 - Migración de la base de datos par actualizar los campos
 Uriel   - 24/05 - Implementado ActionMailer
-Uriel   - 24/05 - (...)
+Uriel   - 24/05 - Creada y configurada cuenta de correo que generará los emails para los usuarios
+Uriel   - 24/05 - Implementada función: enviar email después de registro
+Uriel   - 24/05 - Implementada función: enviar email después de ganar un nuevo follower
 Sergio  - 24/05 - Creados archivos de generación de usurios con categoría de administrador
 Sergio  - 24/05 - Actualizadas hojas de estilo para entorno de Administrador

@@ -2,3 +2,7 @@ Nombre: ADMIN
 Email: micropost.ull@gmail.com
 Contraseña: admin1234
 Color: red
+
+Cuenta de Gmail
+usuario: micropost.ull@gmail.com
+contraseña: micropost123456

@@ -40,7 +40,7 @@ module ApplicationHelper
 	cadena+="<img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/smyle.png\" />"
       elsif word =~ /(:D|:-D|=D)/ 
 	cadena+="<img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/happy.png\" />"
-      elsif word =~ /(>:o|XD|xD)/ 
+      elsif word =~ /(>:o|>:-o|>:O|>:-O)/ 
 	cadena+="<img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/ill.png\" />"
       elsif word =~ /(:o|:O|:-o|:-O)/ 
 	cadena+="<img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/surprise.png\" />"

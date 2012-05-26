@@ -6,12 +6,9 @@
     <span class="user">
       <%= link_to feed_item.user.name, feed_item.user %>
     </span>
-    <% if formato(feed_item.content) == "" %>
-      <span class="content"><%= feed_item.content %></span>
-    <% else %>
-      <span class="content"><%= feed_item.content %></span>
-      <p></p>
-      <span class="content"><a href="<%= formatear(feed_item.content) %>">Ver en Youtube</a></span>
+    <span class="content"><%= render 'microposts/post', :post => feed_item.content %></span>
+    <span class="content"><%= feed_item.content %></span>
+    <% if formato(feed_item.content) != "" %>
       <p></p>
       <span>
         <object width="365" height="205">
@@ -27,7 +24,7 @@
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>
   </td>
-  <% if current_user?(feed_item.user)||current_user.admin? %>
+  <% if (current_user?(feed_item.user)||current_user.admin?) %>
     <td class="delete">
       <%= link_to "Eliminar", feed_item, :method => :delete, :class => :delete,
                                        :confirm => "¿Estás seguro?",

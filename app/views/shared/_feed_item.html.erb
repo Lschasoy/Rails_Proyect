@@ -6,12 +6,8 @@
     <span class="user">
       <%= link_to feed_item.user.name, feed_item.user %>
     </span>
-    <% if formato(feed_item.content) == "" %>
-      <span class="content"><%= feed_item.content %></span>
-    <% else %>
-      <span class="content"><%= feed_item.content %></span>
-      <p></p>
-      <span class="content"><a href="<%= formatear(feed_item.content) %>">Ver en Youtube</a></span>
+    <span class="content"><%= render 'microposts/post', :post => feed_item.content %></span>
+    <% if formato(feed_item.content) != "" %>
       <p></p>
       <span>
         <object width="365" height="205">

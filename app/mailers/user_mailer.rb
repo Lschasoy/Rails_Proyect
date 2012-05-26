@@ -18,4 +18,10 @@ class UserMailer < ActionMailer::Base
     mail(:to => @user_followed.email, :subject => "Un usuario ha dejado de seguirle")
   end
 
+  def new_password(user,newpassword)
+    @user = user
+    @newpassword = newpassword
+    mail(:to => @user.email, :subject => "Se ha generado un nuevo password")
+  end
+
 end

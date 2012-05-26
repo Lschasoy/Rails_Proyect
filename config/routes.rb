@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+
   resources :users do
     member do
       get :following, :followers
@@ -14,7 +15,9 @@ SampleApp::Application.routes.draw do
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
-  match '/signup',  :to => 'users#new'
+
+  match '/newpass', :to => 'pages#newpass'
+  match '/newpassgen', :to => 'pages#newpassgen'
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'

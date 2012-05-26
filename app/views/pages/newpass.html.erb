@@ -1,0 +1,17 @@
+<div id="singin">
+  <div id="signin" class="int">
+    <h1>Cambio de contraseña</h1>
+    <%= form_for(@email) do |f| %>
+      <p>
+        Introduzca su dirección de correo electrónico
+      </p>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.text_field :email %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Entrar" %>
+      </div>
+    <% end %>
+  </div>
+</div>

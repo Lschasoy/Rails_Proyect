@@ -46,6 +46,7 @@ class UsersController < ApplicationController
       render 'edit'
     end
   end
+
   def destroy
     User.find(params[:id]).destroy
     flash[:success] = "Usuario destruido."
@@ -67,8 +68,7 @@ class UsersController < ApplicationController
 
   def search
     @projects = User.search(params[:search])
-  end
-  
+  end 
   private
 
     def authenticate

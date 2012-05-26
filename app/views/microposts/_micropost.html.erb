@@ -1,11 +1,7 @@
 <tr>
   <td class="micropost">
-    <% if formato(micropost.content) == "" %>
-      <span class="content"><%= micropost.content %></span>
-    <% else %>
-      <span class="content"><%= micropost.content %></span>
-      <p></p>
-      <span class="content"><a href="<%= formatear(micropost.content) %>">Ver en Youtube</a></span>
+    <span class="content"><%= render 'microposts/post', :post => micropost.content %></span>
+    <% if formato(micropost.content) != "" %>
       <p></p>
       <span>
         <object width="365" height="205">

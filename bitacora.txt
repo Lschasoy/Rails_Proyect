@@ -29,3 +29,5 @@ Uriel   - 24/05 - Implementada función: enviar email después de ganar un nuevo f
 Uriel   - 24/05 - Implementada función: enviar email después de perder un follower
 Sergio  - 24/05 - Creados archivos de generación de usurios con categoría de administrador
 Sergio  - 24/05 - Actualizadas hojas de estilo para entorno de Administrador
+Uriel   - 26/05 - Creadas vistas de las páginas de solicitud de nueva contraseña (con formulario) y página posterior
+Uriel   - 26/05 - Implementada función: enviar email con nueva contraseña

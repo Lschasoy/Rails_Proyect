@@ -17,11 +17,11 @@ module ApplicationHelper
    def formato(str)
     codigo = ""
     code = ""
-    str.gsub (/youtube\.com\/watch\?v\=.*$/) do |url|
+    str.gsub (/youtube\.com\/watch\?v\=.*\s+/) do |url|
       codigo = url
       '#{url}'
     end
-    codigo.gsub(/\?v\=.*/) do |sec|
+    codigo.gsub(/\?v\=.*\s+/) do |sec|
       code = sec[3..-1]
       'sec'
     end
@@ -208,8 +208,16 @@ module ApplicationHelper
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/freddie.png\" /> "
       elsif word =~ /(:jackie:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/jackie.png\" /> "
-      elsif word =~ /.*www..*..*/
-	cadena+=" <a href=\"#{word}\">#{word}</a> "
+      elsif word =~ /(http|www|ftp)\S+/
+	if word =~ /http/
+	  cadena+=" <a href=\"#{word}\">#{word}</a> "
+	else
+	  if word =~ /https/
+	    cadena+=" <a href=\"https://#{word}\">#{word}</a> "
+	  else
+	    cadena+=" <a href=\"http://#{word}\">#{word}</a> "
+	  end
+	end
       else
 	cadena+=" #{word} "
       end

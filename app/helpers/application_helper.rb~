@@ -21,7 +21,7 @@ module ApplicationHelper
       codigo = url
       '#{url}'
     end
-    codigo.gsub(/\?v\=.*\s+/) do |sec|
+    codigo.gsub(/\?v\=.*\s?/) do |sec|
       code = sec[3..-1]
       'sec'
     end

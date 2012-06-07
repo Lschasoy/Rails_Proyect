@@ -1,7 +1,9 @@
 <%= form_tag "#", :method => 'get' do %>
+<div>  
   <p>
     <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
+    <%= submit_tag "Buscar", :name => nil %>
   </p>
+</div>
 <% end %>
 

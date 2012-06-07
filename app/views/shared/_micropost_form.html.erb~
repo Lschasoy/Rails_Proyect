@@ -1,7 +1,7 @@
 <%= form_for @micropost do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
-    <%= f.text_area :content, :size => "30x10"%>
+    <%= f.text_area :content, :resize => "none" %>
   </div>
   <div class="actions">
     <%= f.submit "Postear" %>

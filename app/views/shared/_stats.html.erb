@@ -1,9 +1,35 @@
 <% @user ||= current_user %>
-<ul>
-    <li>
-      <a href="<%= following_user_path(@user) %>"> <%= @user.following.count %> following </a>
-    </li>
-    <li> 
-      <a href="<%= followers_user_path(@user) %>"> <%= pluralize(@user.followers.count, "follower") %> </a>
-    </li>
-</ul>
+<% cont=0 %>
+<div id="sidebar">
+  <div id="sidebar" class="int">
+<h2> Siguiendo </h2>
+
+      <% unless @user.following.empty? %>
+        <div>
+        <% @user.following.each do |user| %>
+            <%= link_to gravatar_for(user, :size => 30), user if cont<5 %>
+            <% cont+=1 %>
+        <% end %>
+        <a href="<%= following_user_path(@user) %>"> mas... </a>
+        </div>
+      <% end %>
+
+  </div>
+</div>
+<% cont=0 %>
+<div id="sidebar">
+  <div id="sidebar" class="int">
+<h2> Seguidores </h2>
+
+      <% unless @user.followers.empty? %>
+        <div>
+        <% @user.followers.each do |user| %>
+            <%= link_to gravatar_for(user, :size => 30), user if cont<5 %>
+            <% cont+=1 %>
+        <% end %>
+        <a href="<%= followers_user_path(@user) %>"> mas... </a>
+        </div>
+      <% end %>
+
+  </div>
+</div>

@@ -14,22 +14,22 @@
         <table class="microposts" summary="User microposts">
           <%= render @microposts %>
         </table>
-        <div id="pagination"><%= will_paginate @microposts, :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :link_separator => "  " %></div>
+        <div id="pagination"><%= will_paginate @microposts, :previous_label => "Anterior", :next_label => "Siguiente", :id => "pages", :separator => "&nbsp&nbsp" %></div>
       <% end %>
     </td>
   </tr>
 </table>
 
 <div style="clear: both;">&nbsp;</div>
-</div>
-</div>
 <div id="side">
 <div id="sidebar">
   <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>
-      <%= render 'shared/stats' %>
   </div>
 </div>
+
+      <%= render 'shared/stats' %>
+
 <div id="sidebar">
   <div id="sidebar" class="int">
     <%= render 'shared/search' %>

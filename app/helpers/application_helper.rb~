@@ -17,7 +17,7 @@ module ApplicationHelper
    def formato(str)
     codigo = ""
     code = ""
-    str.gsub (/youtube\.com\/watch\?v\=.*\s+/) do |url|
+    str.gsub (/youtube\.com\/watch\?v\=.*\s?/) do |url|
       codigo = url
       '#{url}'
     end
@@ -209,10 +209,14 @@ module ApplicationHelper
       elsif word =~ /(:jackie:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/jackie.png\" /> "
       elsif word =~ /(http|www|ftp)\S+/
-	if word =~ /(https?)/
+	if word =~ /http/
 	  cadena+=" <a href=\"#{word}\">#{word}</a> "
 	else
-	  cadena+=" <a href=\"http://#{word}\">#{word}</a> "
+	  if word =~ /https/
+	    cadena+=" <a href=\"https://#{word}\">#{word}</a> "
+	  else
+	    cadena+=" <a href=\"http://#{word}\">#{word}</a> "
+	  end
 	end
       else
 	cadena+=" #{word} "

@@ -17,11 +17,11 @@ module ApplicationHelper
    def formato(str)
     codigo = ""
     code = ""
-    str.gsub (/youtube\.com\/watch\?v\=.*\s+/) do |url|
+    str.gsub (/youtube\.com\/watch\?v\=.*\s?/) do |url|
       codigo = url
       '#{url}'
     end
-    codigo.gsub(/\?v\=.*\s+/) do |sec|
+    codigo.gsub(/\?v\=.*\s?/) do |sec|
       code = sec[3..-1]
       'sec'
     end

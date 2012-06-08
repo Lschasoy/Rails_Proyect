@@ -19,11 +19,9 @@
       <%= render 'shared/user_info' %>
   </div>
 </div>
-<div id="sidebar">
-  <div id="sidebar" class="int">
+
       <%= render 'shared/stats' %>
-  </div>
-</div>
+
 <div id="sidebar">
   <div id="sidebar" class="int">
     <%= render 'shared/search' %>
@@ -37,12 +35,12 @@
   <div id="home">
     <div class="text">
       <h1>Bienvenidos a Micropost</h1>
-      <p align="center">
+      <p>
         Únete a la comunidad de 
         <a href="http://railstutorial.org/">Micropost</a>
         y comparte con tus amigos lo que quieras.
       </p>
-      <table align="center">
+      <table>
         <tr>
           <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
           <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>

@@ -229,6 +229,10 @@ a:hover {
 	font-size: 18px;
 }
 
+#home table {
+	align: center;
+}
+
 /* Singin */
 
 #singin {
@@ -834,6 +838,7 @@ foto{
 textarea#micropost_content {
   width: 520px;
   height: 40px;
+  resize: none;
 }
 
 /* Pagination */

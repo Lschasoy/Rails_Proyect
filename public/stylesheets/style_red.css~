@@ -229,10 +229,6 @@ a:hover {
 	font-size: 18px;
 }
 
-#home .tabla {
-	margin: auto auto;
-}
-
 /* Singin */
 
 #singin {

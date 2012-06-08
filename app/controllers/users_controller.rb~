@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       if @user.notification == "1" 
-        UserMailer.welcome_email(@user).deliver
+        #UserMailer.welcome_email(@user).deliver
       end
       sign_in @user
       flash[:success] = "Bienvenido a Micropost!"
@@ -46,6 +46,7 @@ class UsersController < ApplicationController
       render 'edit'
     end
   end
+
   def destroy
     User.find(params[:id]).destroy
     flash[:success] = "Usuario destruido."
@@ -67,8 +68,7 @@ class UsersController < ApplicationController
 
   def search
     @projects = User.search(params[:search])
-  end
-  
+  end 
   private
 
     def authenticate

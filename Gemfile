@@ -7,6 +7,7 @@ gem 'will_paginate', '3.0.pre2'
 gem 'pg'
 gem 'faker', '0.3.1'
 gem 'actionmailer','3.0.0'
+gem 'simplecov'
 
 group :development do
   gem "sqlite3-ruby", :require => "sqlite3"

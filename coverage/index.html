@@ -1,0 +1,5106 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Code coverage for Rails proyect</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='./assets/0.5.3/jquery-1.6.2.min.js' type='text/javascript'></script>
+    <script src='./assets/0.5.3/jquery.dataTables.min.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.pack.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.timeago.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.url.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/highlight.pack.js' type='text/javascript'></script>  
+    <script src='./assets/0.5.3/app.js' type='text/javascript'></script>    
+    <link href='./assets/0.5.3/stylesheet.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/highlight.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/smoothness/jquery-ui-1.8.4.custom.css' media='screen, projection, print' rel='stylesheet' type='text/css'>    
+    <link rel="shortcut icon" type="image/png" href="./assets/0.5.3/favicon_red.png" />
+    <link rel="icon" type="image/png" href="./assets/0.5.3/favicon.png" />
+  </head>
+  
+  <body>
+    <div id="loading">
+      <img src="./assets/0.5.3/loading.gif" alt="loading"/>
+    </div>
+    <div id="wrapper" style="display:none;">
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-06-08T20:26:18+01:00">2012-06-08T20:26:18+01:00</abbr></div>
+      <ul class="group_tabs"></ul>
+
+      <div id="content">
+        <div class="file_list_container" id="AllFiles">
+  <h2>
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent"><span class="red">62.47%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         11.61
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="AllFiles"></a>
+  <div>
+    <b>14</b> files in total.
+    <b>405</b> relevant lines. 
+    <span class="green"><b>253</b> lines covered</span> and
+    <span class="red"><b>152</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#5c7b9626b1f5b0d29039099f98f9cf27b242010a" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bfe4e5dedf88202b68b5a6e11cca39cf98cf27db" class="src_link" title="app/controllers/microposts_controller.rb">app/controllers/microposts_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>30</td>
+        <td>18</td>
+        <td>18</td>
+        <td>0</td>
+        <td>2.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#b1afc36be043a02f861f84548fd75dd6ffec40a6" class="src_link" title="app/controllers/pages_controller.rb">app/controllers/pages_controller.rb</a></td>
+        <td class="red strong">51.85 %</td>
+        <td>48</td>
+        <td>27</td>
+        <td>14</td>
+        <td>13</td>
+        <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#247c8ef871b06b56a7324319dc5226127a28cede" class="src_link" title="app/controllers/relationships_controller.rb">app/controllers/relationships_controller.rb</a></td>
+        <td class="red strong">42.86 %</td>
+        <td>21</td>
+        <td>14</td>
+        <td>6</td>
+        <td>8</td>
+        <td>0.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d312c3c611fe7b72ebfa08351260a134134ebb8b" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>14</td>
+        <td>14</td>
+        <td>0</td>
+        <td>5.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#75b20f33231ab05ba6b699106cff169638a7cccb" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
+        <td class="red strong">79.31 %</td>
+        <td>85</td>
+        <td>58</td>
+        <td>46</td>
+        <td>12</td>
+        <td>3.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c23ffb860a65f5a4c5f8d11c3291aebae97d5726" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="red strong">28.47 %</td>
+        <td>281</td>
+        <td>144</td>
+        <td>41</td>
+        <td>103</td>
+        <td>5.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8c1c135fded34169a28694759310948aad171854" class="src_link" title="app/helpers/pages_helper.rb">app/helpers/pages_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1ab04f696194e12b66dd0cfa512f5bc37a8de4c7" class="src_link" title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>51</td>
+        <td>32</td>
+        <td>32</td>
+        <td>0</td>
+        <td>28.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#7a394f83bd5a22e7e1117c06261e4039fb1a0160" class="src_link" title="app/helpers/users_helper.rb">app/helpers/users_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>19</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>52.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3bfe2dbb5156da8a6abe0b342274755631a844a0" class="src_link" title="app/mailers/user_mailer.rb">app/mailers/user_mailer.rb</a></td>
+        <td class="red strong">64.71 %</td>
+        <td>27</td>
+        <td>17</td>
+        <td>11</td>
+        <td>6</td>
+        <td>3.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2348dd9cfd337a9e543e5286e20e6b8f95e7e5db" class="src_link" title="app/models/micropost.rb">app/models/micropost.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>3.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d740ae583d51d2582485ac149233ba9c5e5e16b5" class="src_link" title="app/models/relationship.rb">app/models/relationship.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f19af68f962d71c150f3cf2e8521389c541b5dea" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="yellow strong">81.13 %</td>
+        <td>93</td>
+        <td>53</td>
+        <td>43</td>
+        <td>10</td>
+        <td>53.1</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+        
+          <div class="file_list_container" id="Controllers">
+  <h2>
+    <span class="group_name">Controllers</span>
+    (<span class="covered_percent"><span class="red">75.37%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         2.33
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Controllers"></a>
+  <div>
+    <b>6</b> files in total.
+    <b>134</b> relevant lines. 
+    <span class="green"><b>101</b> lines covered</span> and
+    <span class="red"><b>33</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#5c7b9626b1f5b0d29039099f98f9cf27b242010a" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bfe4e5dedf88202b68b5a6e11cca39cf98cf27db" class="src_link" title="app/controllers/microposts_controller.rb">app/controllers/microposts_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>30</td>
+        <td>18</td>
+        <td>18</td>
+        <td>0</td>
+        <td>2.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#b1afc36be043a02f861f84548fd75dd6ffec40a6" class="src_link" title="app/controllers/pages_controller.rb">app/controllers/pages_controller.rb</a></td>
+        <td class="red strong">51.85 %</td>
+        <td>48</td>
+        <td>27</td>
+        <td>14</td>
+        <td>13</td>
+        <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#247c8ef871b06b56a7324319dc5226127a28cede" class="src_link" title="app/controllers/relationships_controller.rb">app/controllers/relationships_controller.rb</a></td>
+        <td class="red strong">42.86 %</td>
+        <td>21</td>
+        <td>14</td>
+        <td>6</td>
+        <td>8</td>
+        <td>0.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d312c3c611fe7b72ebfa08351260a134134ebb8b" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>14</td>
+        <td>14</td>
+        <td>0</td>
+        <td>5.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#75b20f33231ab05ba6b699106cff169638a7cccb" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
+        <td class="red strong">79.31 %</td>
+        <td>85</td>
+        <td>58</td>
+        <td>46</td>
+        <td>12</td>
+        <td>3.1</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Models">
+  <h2>
+    <span class="group_name">Models</span>
+    (<span class="covered_percent"><span class="yellow">85.71%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         19.03
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Models"></a>
+  <div>
+    <b>3</b> files in total.
+    <b>70</b> relevant lines. 
+    <span class="green"><b>60</b> lines covered</span> and
+    <span class="red"><b>10</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#2348dd9cfd337a9e543e5286e20e6b8f95e7e5db" class="src_link" title="app/models/micropost.rb">app/models/micropost.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>3.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d740ae583d51d2582485ac149233ba9c5e5e16b5" class="src_link" title="app/models/relationship.rb">app/models/relationship.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f19af68f962d71c150f3cf2e8521389c541b5dea" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="yellow strong">81.13 %</td>
+        <td>93</td>
+        <td>53</td>
+        <td>43</td>
+        <td>10</td>
+        <td>53.1</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Helpers">
+  <h2>
+    <span class="group_name">Helpers</span>
+    (<span class="covered_percent"><span class="red">44.02%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         21.98
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Helpers"></a>
+  <div>
+    <b>4</b> files in total.
+    <b>184</b> relevant lines. 
+    <span class="green"><b>81</b> lines covered</span> and
+    <span class="red"><b>103</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#c23ffb860a65f5a4c5f8d11c3291aebae97d5726" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="red strong">28.47 %</td>
+        <td>281</td>
+        <td>144</td>
+        <td>41</td>
+        <td>103</td>
+        <td>5.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8c1c135fded34169a28694759310948aad171854" class="src_link" title="app/helpers/pages_helper.rb">app/helpers/pages_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1ab04f696194e12b66dd0cfa512f5bc37a8de4c7" class="src_link" title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>51</td>
+        <td>32</td>
+        <td>32</td>
+        <td>0</td>
+        <td>28.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#7a394f83bd5a22e7e1117c06261e4039fb1a0160" class="src_link" title="app/helpers/users_helper.rb">app/helpers/users_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>19</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>52.4</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Mailers">
+  <h2>
+    <span class="group_name">Mailers</span>
+    (<span class="covered_percent"><span class="red">64.71%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.6
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Mailers"></a>
+  <div>
+    <b>1</b> files in total.
+    <b>17</b> relevant lines. 
+    <span class="green"><b>11</b> lines covered</span> and
+    <span class="red"><b>6</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#3bfe2dbb5156da8a6abe0b342274755631a844a0" class="src_link" title="app/mailers/user_mailer.rb">app/mailers/user_mailer.rb</a></td>
+        <td class="red strong">64.71 %</td>
+        <td>27</td>
+        <td>17</td>
+        <td>11</td>
+        <td>6</td>
+        <td>3.6</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Views">
+  <h2>
+    <span class="group_name">Views</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Views"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+      </div>
+    
+      <div id="footer">
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.6.4 
+        and simplecov-html v0.5.3<br/>
+        using RSpec
+      </div>
+    
+      <div class="source_files">
+      
+        <div class="source_table" id="5c7b9626b1f5b0d29039099f98f9cf27b242010a">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protect_from_forgery</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include SessionsHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="bfe4e5dedf88202b68b5a6e11cca39cf98cf27db">
+  <div class="header">
+    <h3>app/controllers/microposts_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class MicropostsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :authenticate, :only =&gt; [:create, :destroy]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :authorized_user, :only =&gt; :destroy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    @micropost  = current_user.microposts.build(params[:micropost])</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="10">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    if @micropost.save</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="11">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      flash[:success] = &quot;Micropost creado!&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      redirect_to root_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="14">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @feed_items = []</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="15">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      render 'pages/home'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @micropost.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    redirect_back_or root_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def authorized_user</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="27">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @micropost = current_user.microposts.find_by_id(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="28">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      redirect_to root_path if @micropost.nil?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="b1afc36be043a02f861f84548fd75dd6ffec40a6">
+  <div class="header">
+    <h3>app/controllers/pages_controller.rb</h3>
+    <h4><span class="red">51.85 %</span> covered</h4>
+    <div>
+      <b>27</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>13</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class PagesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def home</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="3">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    @title = &quot;Inicio&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="4">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    if signed_in?</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="5">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      @micropost = Micropost.new</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="6">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      @feed_items = current_user.feed.paginate(:page =&gt; params[:page], :per_page =&gt; 10)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def contact</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @title = &quot;Contacto&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def about</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @title = &quot;Acerca de&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def help</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @title = &quot;Ayuda&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def newpass</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">    @title = &quot;Cambiar password&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    @email = &quot;&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    @user = User.find_by_email(params[:email])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">    if @user.nil?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">      #flash.now[:error]&quot;El email introducido no esta asociado a ningún usuario.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">      @title = &quot;Cambiar password&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">      render 'newpass'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    #Cambiar la contraseña del usuario</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="31">
+          
+          
+          <code class="ruby">      @newpass=&quot;&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">      6.times do </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
+          
+          <code class="ruby">        @newpass+=rand(10).to_s()</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
+          
+          <code class="ruby">      @user.password=@newpass</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">      @user.update_attributes!(@user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    #Enviar email con la nueva contraseña</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">      #UserMailer.new_password(@user,@newpass).deliver</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">    #Cargar página de contraseña cambiada</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">      render 'newpassgen'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def newpassgen</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">    @title = &quot;Password cambiado&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="247c8ef871b06b56a7324319dc5226127a28cede">
+  <div class="header">
+    <h3>app/controllers/relationships_controller.rb</h3>
+    <h4><span class="red">42.86 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class RelationshipsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :authenticate</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @user = User.find(params[:relationship][:followed_id])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    current_user.follow!(@user)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">      format.html { redirect_to @user }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">      format.js</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    @user = Relationship.find(params[:id]).followed</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    current_user.unfollow!(@user)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">      format.html { redirect_to @user }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">      format.js</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="d312c3c611fe7b72ebfa08351260a134134ebb8b">
+  <div class="header">
+    <h3>app/controllers/sessions_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SessionsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="4">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    @title = &quot;Entrar&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="14" data-linenumber="8">
+          <span class="hits">14</span>
+          
+          <code class="ruby">    user = User.authenticate(params[:session][:email],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">                             params[:session][:password])</code>
+        </li>
+      
+        <li class="covered" data-hits="14" data-linenumber="10">
+          <span class="hits">14</span>
+          
+          <code class="ruby">    if user.nil?</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="11">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      flash.now[:error] = &quot;Combinacion email/password incorrecta.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      @title = &quot;Entrar&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="13">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      render 'new'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="15">
+          <span class="hits">10</span>
+          
+          <code class="ruby">      sign_in user</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="16">
+          <span class="hits">10</span>
+          
+          <code class="ruby">      redirect_back_or user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="21">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    sign_out</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    redirect_to root_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="75b20f33231ab05ba6b699106cff169638a7cccb">
+  <div class="header">
+    <h3>app/controllers/users_controller.rb</h3>
+    <h4><span class="red">79.31 %</span> covered</h4>
+    <div>
+      <b>58</b> relevant lines. 
+      <span class="green"><b>46</b> lines covered</span> and
+      <span class="red"><b>12</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class UsersController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :authenticate, :except =&gt; [:show, :new, :create]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">#  before_filter :authenticate, :only =&gt; [:index, :edit, :update, :destroy]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :correct_user, :only =&gt; [:edit, :update]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :admin_user,   :only =&gt; :destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    @title = &quot;Todos los usuarios&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="8">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    @users = User.paginate(:page =&gt; params[:page], :per_page =&gt; 10)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="12">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    @user = User.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="13">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    @microposts = @user.microposts.paginate(:page =&gt; params[:page], :per_page =&gt; 10)</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="14">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    @title = @user.name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="18">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @user = User.new</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="19">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @title = &quot;Nuevo usuario&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="22">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    @user = User.new(params[:user])</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="23">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    if @user.save</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="24">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      if @user.notification == &quot;1&quot; </code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="25">
+          <span class="hits">5</span>
+          
+          <code class="ruby">        UserMailer.welcome_email(@user).deliver</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">      sign_in @user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">      flash[:success] = &quot;Bienvenido a Micropost!&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">      redirect_to @user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="31">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      @title = &quot;Nuevo usuario&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="32">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      render 'new'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="36">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @user = User.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="37">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @title = &quot;Editar usuario&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="40">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @user = User.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="41">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    if @user.update_attributes(params[:user])</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="42">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      flash[:success] = &quot;Perfil actualizado.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="43">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      redirect_to @user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="45">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @title = &quot;Editar usuario&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      render 'edit'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="51">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    User.find(params[:id]).destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    flash[:success] = &quot;Usuario destruido.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="53">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    redirect_to users_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def following</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
+          
+          
+          <code class="ruby">    @title = &quot;Siguiendo&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="57">
+          
+          
+          <code class="ruby">    @user = User.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="58">
+          
+          
+          <code class="ruby">    @users = @user.following.paginate(:page =&gt; params[:page], :per_page =&gt; 10)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
+          
+          <code class="ruby">    render 'show_follow'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def followers</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="63">
+          
+          
+          <code class="ruby">    @title = &quot;Seguidores&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="64">
+          
+          
+          <code class="ruby">    @user = User.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="65">
+          
+          
+          <code class="ruby">    @users = @user.followers.paginate(:page =&gt; params[:page], :per_page =&gt; 10)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="66">
+          
+          
+          <code class="ruby">    render 'show_follow'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def search</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
+          
+          <code class="ruby">    @projects = User.search(params[:search])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">  end </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def authenticate</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="75">
+          <span class="hits">24</span>
+          
+          <code class="ruby">      deny_access unless signed_in?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def correct_user</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="79">
+          <span class="hits">10</span>
+          
+          <code class="ruby">      @user = User.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="80">
+          <span class="hits">10</span>
+          
+          <code class="ruby">      redirect_to(root_path) unless current_user?(@user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def admin_user</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="83">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      redirect_to(root_path) unless current_user.admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="c23ffb860a65f5a4c5f8d11c3291aebae97d5726">
+  <div class="header">
+    <h3>app/helpers/application_helper.rb</h3>
+    <h4><span class="red">28.47 %</span> covered</h4>
+    <div>
+      <b>144</b> relevant lines. 
+      <span class="green"><b>41</b> lines covered</span> and
+      <span class="red"><b>103</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module ApplicationHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # Return a title on a per-page basis.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def title</code>
+        </li>
+      
+        <li class="covered" data-hits="57" data-linenumber="5">
+          <span class="hits">57</span>
+          
+          <code class="ruby">    base_title = &quot;Micropost&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="57" data-linenumber="6">
+          <span class="hits">57</span>
+          
+          <code class="ruby">    if @title.nil?</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="7">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      base_title</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="54" data-linenumber="9">
+          <span class="hits">54</span>
+          
+          <code class="ruby">      &quot;#{base_title} | #{@title}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def logo</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    image_tag(&quot;logo.png&quot;, :alt =&gt; &quot;Sample App&quot;, :class =&gt; &quot;round&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   def formato(str)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    codigo = &quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    code = &quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    str.gsub (/youtube\.com\/watch\?v\=.*\s?/) do |url|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">      codigo = url</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">      '#{url}'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    codigo.gsub(/\?v\=.*\s?/) do |sec|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">      code = sec[3..-1]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">      'sec'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    if code == &quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      &quot;&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="31">
+          
+          
+          <code class="ruby">      &quot;http://www.youtube.com/v/#{code}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def formatear(str)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    a = str.split(&quot; &quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    cadena = &quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    a.each do |word|</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="39">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      if word =~ /(\:\)|\:-\)|\=\])/</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/smyle.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">      elsif word =~ /(:D|:-D|=D)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/happy.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">      elsif word =~ /(&gt;:o|&gt;:-o|&gt;:O|&gt;:-O)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/ill.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">      elsif word =~ /(:o|:O|:-o|:-O)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/surprise.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">      elsif word =~ /(:\(|:-\(|=\(|:\[)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/sad.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">      elsif word =~ /(;\)|;-\))/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/tick.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">      elsif word =~ /(:'\()/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/tears.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">      elsif word =~ /(:\*|:-\*)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/kiss.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">      elsif word =~ /(:p|:-p|:P|:-P)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/tonge.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">      elsif word =~ /(&gt;:\(|&gt;:-\()/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="58">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/angry.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">      elsif word =~ /(&lt;3)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="60">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/love.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">      elsif word =~ /(:3)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/cat.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">      elsif word =~ /(\^_\^|\^-\^)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="64">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/friendly.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">      elsif word =~ /(-_-)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="66">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/eyes.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">      elsif word =~ /(o:\)|o:-\)|O:\)|O:-\)|0:\)|0:-\))/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="68">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/angel.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">      elsif word =~ /(3:\)|3:-\))/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/devil.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">      elsif word =~ /(:v)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="72">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/pacman.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">      elsif word =~ /(8\)|8-\)|B\)|B-\))/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="74">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/glasses.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">      elsif word =~ /(8\||8-\||B\||B-\|)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="76">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/sunglasses.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">      elsif word =~ /(:\/|:-\/|:\\|:-\\|:s|:S)$/</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="78">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/confusing.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">      elsif word =~ /(o\.O|O\.o|o\.0|0\.o)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="80">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/annoyed.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby">      elsif word =~ /(xd+|xD+|XD+)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="82">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/laugth.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">      elsif word =~ /(:megusta:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="84">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/megusta.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">      elsif word =~ /(:fuckyea:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="86">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/fuckyea.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby">      elsif word =~ /(:yuno:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="88">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/yuno.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby">      elsif word =~ /(:trollface:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="90">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/trollface.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">      elsif word =~ /(:son:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="92">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/son.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">      elsif word =~ /(:lol:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="94">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/lol.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby">      elsif word =~ /(:really:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="96">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/really.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby">      elsif word =~ /(:ff*uuu*:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="98">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/fuuu.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby">      elsif word =~ /(:happy:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="100">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/happy2.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">      elsif word =~ /(:u+mm*:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="102">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/umm.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby">      elsif word =~ /(:okay:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="104">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/okay.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby">      elsif word =~ /(:fuckyeagirl:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="106">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/fuckyeagirl.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby">      elsif word =~ /(:motherofgod:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="108">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/motherofgod.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby">      elsif word =~ /(:sadtroll:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="110">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/sadtroll.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
+          <code class="ruby">      elsif word =~ /(:yaoming:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="112">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/yaoming.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">      elsif word =~ /(:ninja:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="114">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/ninja.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
+          
+          
+          <code class="ruby">      elsif word =~ /(:emm*:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="116">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/emm.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby">      elsif word =~ /(:fuuu*girl:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="118">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/fuuugirl.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="119">
+          
+          
+          <code class="ruby">      elsif word =~ /(:happygirl:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="120">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/happygirl.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby">      elsif word =~ /(:angry:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="122">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/angry2.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="123">
+          
+          
+          <code class="ruby">      elsif word =~ /(:foreveralone:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="124">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/foreveralone.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="125">
+          
+          
+          <code class="ruby">      elsif word =~ /(:challengeaccepted:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="126">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/challengeaccepted.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="127">
+          
+          
+          <code class="ruby">      elsif word =~ /(:whynot:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="128">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/whynot.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="129">
+          
+          
+          <code class="ruby">      elsif word =~ /(:trolldad:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="130">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/trolldad.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby">      elsif word =~ /(:raisins:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="132">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/raisins.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="133">
+          
+          
+          <code class="ruby">      elsif word =~ /(:pukerainbows:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="134">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/pukerainbows.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="135">
+          
+          
+          <code class="ruby">      elsif word =~ /(:coo*l:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="136">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/cool.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="137">
+          
+          
+          <code class="ruby">      elsif word =~ /(:fuuu*girl2:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="138">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/fuuugirl2.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="139">
+          
+          
+          <code class="ruby">      elsif word =~ /(:omf:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="140">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/omf.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="141">
+          
+          
+          <code class="ruby">      elsif word =~ /(:why:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="142">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/why.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="143">
+          
+          
+          <code class="ruby">      elsif word =~ /(:neveralone:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="144">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/neveralone.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="145">
+          
+          
+          <code class="ruby">      elsif word =~ /(:kiddingme:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="146">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/kiddingme.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="147">
+          
+          
+          <code class="ruby">      elsif word =~ /(:suspicious:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="148">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/suspicious.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="149">
+          
+          
+          <code class="ruby">      elsif word =~ /(:trollgirl:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="150">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/trollgirl.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="151">
+          
+          
+          <code class="ruby">      elsif word =~ /(:inglip:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="152">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/inglip.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="153">
+          
+          
+          <code class="ruby">      elsif word =~ /(:itsfree:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="154">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/itsfree.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="155">
+          
+          
+          <code class="ruby">      elsif word =~ /(:mentira:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="156">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/mentira.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="157">
+          
+          
+          <code class="ruby">      elsif word =~ /(:feellikeasir:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="158">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/feellikeasir.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="159">
+          
+          
+          <code class="ruby">      elsif word =~ /(:cereales:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="160">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/cereales.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="161">
+          
+          
+          <code class="ruby">      elsif word =~ /(:betterthanexpected:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="162">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/betterthanexpected.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="163">
+          
+          
+          <code class="ruby">      elsif word =~ /(:aww*yea+:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="164">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/awwyea.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="165">
+          
+          
+          <code class="ruby">      elsif word =~ /(:(fap)+girl:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="166">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/fapfapgirl.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="167">
+          
+          
+          <code class="ruby">      elsif word =~ /(:(fap)+:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="168">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/fapfap.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="169">
+          
+          
+          <code class="ruby">      elsif word =~ /(:trolledtroll:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="170">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/trolledtroll.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="171">
+          
+          
+          <code class="ruby">      elsif word =~ /(:raisins2:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="172">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/raisins2.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="173">
+          
+          
+          <code class="ruby">      elsif word =~ /(:jodete:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="174">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/jodete.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="175">
+          
+          
+          <code class="ruby">      elsif word =~ /(:itssomething:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="176">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/itssomething.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="177">
+          
+          
+          <code class="ruby">      elsif word =~ /(:pokerface:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="178">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/pokerface.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="179">
+          
+          
+          <code class="ruby">      elsif word =~ /(:upset:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="180">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/upset.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="181">
+          
+          
+          <code class="ruby">      elsif word =~ /(:u+f+:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="182">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/uf.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="183">
+          
+          
+          <code class="ruby">      elsif word =~ /(:menti:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="184">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/menti.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="185">
+          
+          
+          <code class="ruby">      elsif word =~ /(:mirada:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="186">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/mirada.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="187">
+          
+          
+          <code class="ruby">      elsif word =~ /(:no:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="188">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/no.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="189">
+          
+          
+          <code class="ruby">      elsif word =~ /(:nothing:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="190">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/nothing.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="191">
+          
+          
+          <code class="ruby">      elsif word =~ /(:notbad2:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="192">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/notbad2.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="193">
+          
+          
+          <code class="ruby">      elsif word =~ /(:notbad1:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="194">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/notbad1.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="195">
+          
+          
+          <code class="ruby">      elsif word =~ /(:desprecio:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="196">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/desprecio.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="197">
+          
+          
+          <code class="ruby">      elsif word =~ /(:friki:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="198">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/friki.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="199">
+          
+          
+          <code class="ruby">      elsif word =~ /(:serious1:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="200">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/serious1.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="201">
+          
+          
+          <code class="ruby">      elsif word =~ /(:serious2:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="202">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/serious2.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="203">
+          
+          
+          <code class="ruby">      elsif word =~ /(:truestory:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="204">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/truestory.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="205">
+          
+          
+          <code class="ruby">      elsif word =~ /(:observer:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="206">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/observer.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="207">
+          
+          
+          <code class="ruby">      elsif word =~ /(:freddie:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="208">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/freddie.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="209">
+          
+          
+          <code class="ruby">      elsif word =~ /(:jackie:)/ </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="210">
+          
+          
+          <code class="ruby">	cadena+=&quot; &lt;img class=\&quot;icon\&quot; alt=\&quot;#{word.downcase}\&quot;  src=\&quot;/images/icon/jackie.png\&quot; /&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="211">
+          
+          
+          <code class="ruby">      elsif word =~ /(http|www|ftp)\S+/</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="212">
+          
+          
+          <code class="ruby">	if word =~ /http/</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="213">
+          
+          
+          <code class="ruby">	  cadena+=&quot; &lt;a href=\&quot;#{word}\&quot;&gt;#{word}&lt;/a&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="214">
+          
+          
+          <code class="ruby">	else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="215">
+          
+          
+          <code class="ruby">	  if word =~ /https/</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="216">
+          
+          
+          <code class="ruby">	    cadena+=&quot; &lt;a href=\&quot;https://#{word}\&quot;&gt;#{word}&lt;/a&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="217">
+          
+          
+          <code class="ruby">	  else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="218">
+          
+          
+          <code class="ruby">	    cadena+=&quot; &lt;a href=\&quot;http://#{word}\&quot;&gt;#{word}&lt;/a&gt; &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="219">
+          
+          
+          <code class="ruby">	  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="220">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="221">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="222">
+          <span class="hits">5</span>
+          
+          <code class="ruby">	cadena+=&quot; #{word} &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="223">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="224">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="225">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    cadena</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="226">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="227">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="228">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="229">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def stylesheet(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="57" data-linenumber="230">
+          <span class="hits">57</span>
+          
+          <code class="ruby">   if user.is_a?(User)</code>
+        </li>
+      
+        <li class="covered" data-hits="22" data-linenumber="231">
+          <span class="hits">22</span>
+          
+          <code class="ruby">    if user.color == &quot;blue&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="232">
+          
+          
+          <code class="ruby">      &quot;/stylesheets/style_blue.css&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="233">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="22" data-linenumber="234">
+          <span class="hits">22</span>
+          
+          <code class="ruby">      if user.color == &quot;red&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="235">
+          
+          
+          <code class="ruby">        &quot;/stylesheets/style_red.css&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="236">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="22" data-linenumber="237">
+          <span class="hits">22</span>
+          
+          <code class="ruby">        if user.color == &quot;green&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="238">
+          
+          
+          <code class="ruby">          &quot;/stylesheets/style_green.css&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="239">
+          
+          
+          <code class="ruby">	else</code>
+        </li>
+      
+        <li class="covered" data-hits="22" data-linenumber="240">
+          <span class="hits">22</span>
+          
+          <code class="ruby">          if user.color == &quot;yellow&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="241">
+          
+          
+          <code class="ruby">            &quot;/stylesheets/style_yellow.css&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="242">
+          
+          
+          <code class="ruby">	  else</code>
+        </li>
+      
+        <li class="covered" data-hits="22" data-linenumber="243">
+          <span class="hits">22</span>
+          
+          <code class="ruby">	    &quot;/stylesheets/style.css&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="244">
+          
+          
+          <code class="ruby">	  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="245">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="246">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="247">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="248">
+          
+          
+          <code class="ruby">   else</code>
+        </li>
+      
+        <li class="covered" data-hits="35" data-linenumber="249">
+          <span class="hits">35</span>
+          
+          <code class="ruby">     &quot;/stylesheets/style.css&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="250">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="251">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="252">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="253">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def paleta(color)</code>
+        </li>
+      
+        <li class="covered" data-hits="112" data-linenumber="254">
+          <span class="hits">112</span>
+          
+          <code class="ruby">    if color == &quot;blue&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="255">
+          <span class="hits">28</span>
+          
+          <code class="ruby">      &quot;blue&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="256">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="84" data-linenumber="257">
+          <span class="hits">84</span>
+          
+          <code class="ruby">      if color == &quot;red&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="258">
+          <span class="hits">28</span>
+          
+          <code class="ruby">        &quot;red&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="259">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="56" data-linenumber="260">
+          <span class="hits">56</span>
+          
+          <code class="ruby">        if color == &quot;green&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="261">
+          <span class="hits">28</span>
+          
+          <code class="ruby">          &quot;green&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="262">
+          
+          
+          <code class="ruby">	else</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="263">
+          <span class="hits">28</span>
+          
+          <code class="ruby">          if color == &quot;yellow&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="264">
+          <span class="hits">28</span>
+          
+          <code class="ruby">            &quot;yellow&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="265">
+          
+          
+          <code class="ruby">	  else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="266">
+          
+          
+          <code class="ruby">	    &quot;default&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="267">
+          
+          
+          <code class="ruby">	  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="268">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="269">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="270">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="271">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="272">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="273">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def notification(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="14" data-linenumber="274">
+          <span class="hits">14</span>
+          
+          <code class="ruby">    if user.notification == &quot;1&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="14" data-linenumber="275">
+          <span class="hits">14</span>
+          
+          <code class="ruby">      &quot;checked&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="276">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="277">
+          
+          
+          <code class="ruby">      &quot;&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="278">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="279">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="280">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="281">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="8c1c135fded34169a28694759310948aad171854">
+  <div class="header">
+    <h3>app/helpers/pages_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module PagesHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="1ab04f696194e12b66dd0cfa512f5bc37a8de4c7">
+  <div class="header">
+    <h3>app/helpers/sessions_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>32</b> relevant lines. 
+      <span class="green"><b>32</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module SessionsHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sign_in(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="41" data-linenumber="4">
+          <span class="hits">41</span>
+          
+          <code class="ruby">    cookies.permanent.signed[:remember_token] = [user.id, user.salt]</code>
+        </li>
+      
+        <li class="covered" data-hits="41" data-linenumber="5">
+          <span class="hits">41</span>
+          
+          <code class="ruby">    self.current_user = user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def current_user=(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="43" data-linenumber="8">
+          <span class="hits">43</span>
+          
+          <code class="ruby">    @current_user = user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def current_user</code>
+        </li>
+      
+        <li class="covered" data-hits="322" data-linenumber="11">
+          <span class="hits">322</span>
+          
+          <code class="ruby">    @current_user ||= user_from_remember_token</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def signed_in?</code>
+        </li>
+      
+        <li class="covered" data-hits="133" data-linenumber="14">
+          <span class="hits">133</span>
+          
+          <code class="ruby">    !current_user.nil?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sign_out</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    cookies.delete(:remember_token)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="18">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    self.current_user = nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def current_user?(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="21">
+          <span class="hits">16</span>
+          
+          <code class="ruby">    user == current_user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def authenticate</code>
+        </li>
+      
+        <li class="covered" data-hits="15" data-linenumber="24">
+          <span class="hits">15</span>
+          
+          <code class="ruby">    deny_access unless signed_in?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def deny_access</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="28">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    store_location</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="29">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    redirect_to signin_path, :notice =&gt; &quot;Por favor entre para acceder a esta pagina.&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def redirect_back_or(default)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="33">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    redirect_to(session[:return_to] || default)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="34">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    clear_return_to</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  end  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def user_from_remember_token</code>
+        </li>
+      
+        <li class="covered" data-hits="112" data-linenumber="38">
+          <span class="hits">112</span>
+          
+          <code class="ruby">      User.authenticate_with_salt(*remember_token)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def remember_token</code>
+        </li>
+      
+        <li class="covered" data-hits="112" data-linenumber="42">
+          <span class="hits">112</span>
+          
+          <code class="ruby">      cookies.signed[:remember_token] || [nil, nil]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def store_location</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="45">
+          <span class="hits">11</span>
+          
+          <code class="ruby">      session[:return_to] = request.fullpath</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def clear_return_to</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="49">
+          <span class="hits">11</span>
+          
+          <code class="ruby">      session[:return_to] = nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="7a394f83bd5a22e7e1117c06261e4039fb1a0160">
+  <div class="header">
+    <h3>app/helpers/users_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module UsersHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">#   def gravatar_for(user, options = { :size =&gt; 50 })</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">#     gravatar_image_tag(user.email.downcase, :alt =&gt; h(user.name),</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#                                             :class =&gt; 'gravatar',</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">#                                             :gravatar =&gt; options)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def gravatar_for(user, options = { :size =&gt; 50 })</code>
+        </li>
+      
+        <li class="covered" data-hits="73" data-linenumber="10">
+          <span class="hits">73</span>
+          
+          <code class="ruby">    h = { 0 =&gt; &quot;identicon&quot;, 1 =&gt; &quot;monsterid&quot;, 2 =&gt; &quot;wavatar&quot;, 3 =&gt; &quot;retro&quot; }</code>
+        </li>
+      
+        <li class="covered" data-hits="73" data-linenumber="11">
+          <span class="hits">73</span>
+          
+          <code class="ruby">    options[&quot;d&quot;]=h[3-user.id%4]</code>
+        </li>
+      
+        <li class="covered" data-hits="73" data-linenumber="12">
+          <span class="hits">73</span>
+          
+          <code class="ruby">    gravatar_id = Digest::MD5::hexdigest(user.email.downcase)</code>
+        </li>
+      
+        <li class="covered" data-hits="73" data-linenumber="13">
+          <span class="hits">73</span>
+          
+          <code class="ruby">    gravatar_url = &quot;http://gravatar.com/avatar/#{gravatar_id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="73" data-linenumber="14">
+          <span class="hits">73</span>
+          
+          <code class="ruby">    gravatar_image_tag(gravatar_url, :alt =&gt; h(user.name),</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">                                     :class =&gt; 'gravatar',</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">                                     :gravatar =&gt; options)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3bfe2dbb5156da8a6abe0b342274755631a844a0">
+  <div class="header">
+    <h3>app/mailers/user_mailer.rb</h3>
+    <h4><span class="red">64.71 %</span> covered</h4>
+    <div>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class UserMailer &lt; ActionMailer::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  default :from =&gt; &quot;micropost.ull@gmail.com&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"> </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def welcome_email(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="5">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @user = user</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="6">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    mail(:to =&gt; @user.email, :subject =&gt; &quot;Bienvenido a Micropost!&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new_follower(user,user_followed)</code>
+        </li>
+      
+        <li class="covered" data-hits="15" data-linenumber="10">
+          <span class="hits">15</span>
+          
+          <code class="ruby">    @user = user</code>
+        </li>
+      
+        <li class="covered" data-hits="15" data-linenumber="11">
+          <span class="hits">15</span>
+          
+          <code class="ruby">    @user_followed = user_followed</code>
+        </li>
+      
+        <li class="covered" data-hits="15" data-linenumber="12">
+          <span class="hits">15</span>
+          
+          <code class="ruby">    mail(:to =&gt; @user_followed.email, :subject =&gt; &quot;Tiene un nuevo seguidor!&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def unfollow_advice(user,user_followed)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">    @user = user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    @user_followed = user_followed</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    mail(:to =&gt; @user_followed.email, :subject =&gt; &quot;Un usuario ha dejado de seguirle&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new_password(user,newpassword)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    @user = user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    @newpassword = newpassword</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">    mail(:to =&gt; @user.email, :subject =&gt; &quot;Se ha generado un nuevo password&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="2348dd9cfd337a9e543e5286e20e6b8f95e7e5db">
+  <div class="header">
+    <h3>app/models/micropost.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Micropost &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessible :content</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :content, :presence =&gt; true, :length =&gt; { :maximum =&gt; 140 }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :user_id, :presence =&gt; true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  default_scope :order =&gt; 'microposts.created_at DESC'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # Return microposts from the users being followed by the given user.</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="12">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  scope :from_users_followed_by, lambda { |user| followed_by(user) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    # Return an SQL condition for users followed by the given user.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    # We include the user's own id as well.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def self.followed_by(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="19">
+          <span class="hits">8</span>
+          
+          <code class="ruby">      following_ids = %(SELECT followed_id FROM relationships</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">                        WHERE follower_id = :user_id)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="21">
+          <span class="hits">8</span>
+          
+          <code class="ruby">      where(&quot;user_id IN (#{following_ids}) OR user_id = :user_id&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">            { :user_id =&gt; user })</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="d740ae583d51d2582485ac149233ba9c5e5e16b5">
+  <div class="header">
+    <h3>app/models/relationship.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Relationship &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessible :followed_id</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :follower, :class_name =&gt; &quot;User&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :followed, :class_name =&gt; &quot;User&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :follower_id, :presence =&gt; true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :followed_id, :presence =&gt; true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="f19af68f962d71c150f3cf2e8521389c541b5dea">
+  <div class="header">
+    <h3>app/models/user.rb</h3>
+    <h4><span class="yellow">81.13 %</span> covered</h4>
+    <div>
+      <b>53</b> relevant lines. 
+      <span class="green"><b>43</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class User &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessor :password</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessible :name, :email, :password, :password_confirmation, :color, :notification</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :microposts, :dependent =&gt; :destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :relationships, :foreign_key =&gt; &quot;follower_id&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">                           :dependent =&gt; :destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :following, :through =&gt; :relationships, :source =&gt; :followed</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :reverse_relationships, :foreign_key =&gt; &quot;followed_id&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">                                   :class_name =&gt; &quot;Relationship&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">                                   :dependent =&gt; :destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :followers, :through =&gt; :reverse_relationships, :source =&gt; :follower</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # Automatically create the virtual attribute 'password_confirmation'.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :password, :presence     =&gt; true,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">                       :confirmation =&gt; true,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">                       :length       =&gt; { :within =&gt; 6..40 }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :name,  :presence =&gt; true,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">                    :length   =&gt; { :maximum =&gt; 50 }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :email, :presence   =&gt; true,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">                    :format     =&gt; { :with =&gt; email_regex },</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">                    :uniqueness =&gt; { :case_sensitive =&gt; false }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :color, :length   =&gt; { :maximum =&gt; 10 }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :notification, :length   =&gt; { :maximum =&gt; 1 }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_save :encrypt_password  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # Return true if the user's password matches the submitted password.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def has_password?(submitted_password)</code>
+        </li>
+      
+        <li class="covered" data-hits="285" data-linenumber="29">
+          <span class="hits">285</span>
+          
+          <code class="ruby">    encrypted_password == encrypt(submitted_password)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.authenticate(email, submitted_password)</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="33">
+          <span class="hits">17</span>
+          
+          <code class="ruby">    user = find_by_email(email)</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="34">
+          <span class="hits">17</span>
+          
+          <code class="ruby">    return nil  if user.nil?</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="35">
+          <span class="hits">12</span>
+          
+          <code class="ruby">    return user if user.has_password?(submitted_password)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.authenticate_by_email(email)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">    user = find_by_email(email)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">    return nil  if user.nil?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.authenticate_with_salt(id, cookie_salt)</code>
+        </li>
+      
+        <li class="covered" data-hits="112" data-linenumber="44">
+          <span class="hits">112</span>
+          
+          <code class="ruby">    user = find_by_id(id)</code>
+        </li>
+      
+        <li class="covered" data-hits="112" data-linenumber="45">
+          <span class="hits">112</span>
+          
+          <code class="ruby">    (user &amp;&amp; user.salt == cookie_salt) ? user : nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def following?(followed)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">    relationships.find_by_followed_id(followed)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def follow!(followed)</code>
+        </li>
+      
+        <li class="covered" data-hits="15" data-linenumber="52">
+          <span class="hits">15</span>
+          
+          <code class="ruby">    if followed.notification == &quot;1&quot; </code>
+        </li>
+      
+        <li class="covered" data-hits="15" data-linenumber="53">
+          <span class="hits">15</span>
+          
+          <code class="ruby">      UserMailer.new_follower(self,followed).deliver</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="55">
+          
+          
+          <code class="ruby">    relationships.create!(:followed_id =&gt; followed.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def unfollow!(followed)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
+          
+          <code class="ruby">    if followed.notification == &quot;1&quot; </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="60">
+          
+          
+          <code class="ruby">      UserMailer.unfollow_advice(self,followed).deliver</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
+          
+          <code class="ruby">    relationships.find_by_followed_id(followed).destroy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def feed</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="65">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    Micropost.from_users_followed_by(self)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.search(search)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="69">
+          
+          
+          <code class="ruby">    if search</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
+          
+          <code class="ruby">      find(:all, :conditions =&gt; ['name LIKE ?', &quot;%#{search}%&quot;])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="72">
+          
+          
+          <code class="ruby">      find(:all)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"> </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def encrypt_password</code>
+        </li>
+      
+        <li class="covered" data-hits="271" data-linenumber="78">
+          <span class="hits">271</span>
+          
+          <code class="ruby">      self.salt = make_salt unless has_password?(password)</code>
+        </li>
+      
+        <li class="covered" data-hits="271" data-linenumber="79">
+          <span class="hits">271</span>
+          
+          <code class="ruby">      self.encrypted_password = encrypt(password)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def encrypt(string)</code>
+        </li>
+      
+        <li class="covered" data-hits="556" data-linenumber="83">
+          <span class="hits">556</span>
+          
+          <code class="ruby">      secure_hash(&quot;#{salt}--#{string}&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def make_salt</code>
+        </li>
+      
+        <li class="covered" data-hits="270" data-linenumber="87">
+          <span class="hits">270</span>
+          
+          <code class="ruby">      secure_hash(&quot;#{Time.now.utc}--#{password}&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def secure_hash(string)</code>
+        </li>
+      
+        <li class="covered" data-hits="826" data-linenumber="91">
+          <span class="hits">826</span>
+          
+          <code class="ruby">      Digest::SHA2.hexdigest(string)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+      </div>
+    </div>
+  </body>
+</html>

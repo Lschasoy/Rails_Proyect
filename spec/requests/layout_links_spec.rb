@@ -1,4 +1,6 @@
 require 'spec_helper'
+require 'application_helper'
+require 'pages_helper'
 
 describe "LayoutLinks" do
 

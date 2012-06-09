@@ -10,10 +10,6 @@ module ApplicationHelper
     end
   end
   
-  def logo
-    image_tag("logo.png", :alt => "Sample App", :class => "round")
-  end
-  
    def formato(str)
     codigo = ""
     code = ""
@@ -38,177 +34,177 @@ module ApplicationHelper
     a.each do |word|
       if word =~ /(\:\)|\:-\)|\=\])/
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/smyle.png\" /> "
-      elsif word =~ /(:D|:-D|=D)/ 
+      else if word =~ /(:D|:-D|=D)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/happy.png\" /> "
-      elsif word =~ /(>:o|>:-o|>:O|>:-O)/ 
+      else if word =~ /(>:o|>:-o|>:O|>:-O)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/ill.png\" /> "
-      elsif word =~ /(:o|:O|:-o|:-O)/ 
+      else if word =~ /(:o|:O|:-o|:-O)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/surprise.png\" /> "
-      elsif word =~ /(:\(|:-\(|=\(|:\[)/ 
+      else if word =~ /(:\(|:-\(|=\(|:\[)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/sad.png\" /> "
-      elsif word =~ /(;\)|;-\))/ 
+      else if word =~ /(;\)|;-\))/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/tick.png\" /> "
-      elsif word =~ /(:'\()/ 
+      else if word =~ /(:'\()/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/tears.png\" /> "
-      elsif word =~ /(:\*|:-\*)/ 
+      else if word =~ /(:\*|:-\*)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/kiss.png\" /> "
-      elsif word =~ /(:p|:-p|:P|:-P)/ 
+      else if word =~ /(:p|:-p|:P|:-P)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/tonge.png\" /> "
-      elsif word =~ /(>:\(|>:-\()/ 
+      else if word =~ /(>:\(|>:-\()/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/angry.png\" /> "
-      elsif word =~ /(<3)/ 
+      else if word =~ /(<3)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/love.png\" /> "
-      elsif word =~ /(:3)/ 
+      else if word =~ /(:3)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/cat.png\" /> "
-      elsif word =~ /(\^_\^|\^-\^)/ 
+      else if word =~ /(\^_\^|\^-\^)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/friendly.png\" /> "
-      elsif word =~ /(-_-)/ 
+      else if word =~ /(-_-)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/eyes.png\" /> "
-      elsif word =~ /(o:\)|o:-\)|O:\)|O:-\)|0:\)|0:-\))/ 
+      else if word =~ /(o:\)|o:-\)|O:\)|O:-\)|0:\)|0:-\))/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/angel.png\" /> "
-      elsif word =~ /(3:\)|3:-\))/ 
+      else if word =~ /(3:\)|3:-\))/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/devil.png\" /> "
-      elsif word =~ /(:v)/ 
+      else if word =~ /(:v)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/pacman.png\" /> "
-      elsif word =~ /(8\)|8-\)|B\)|B-\))/ 
+      else if word =~ /(8\)|8-\)|B\)|B-\))/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/glasses.png\" /> "
-      elsif word =~ /(8\||8-\||B\||B-\|)/ 
+      else if word =~ /(8\||8-\||B\||B-\|)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/sunglasses.png\" /> "
-      elsif word =~ /(:\/|:-\/|:\\|:-\\|:s|:S)$/
+      else if word =~ /(:\/|:-\/|:\\|:-\\|:s|:S)$/
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/confusing.png\" /> "
-      elsif word =~ /(o\.O|O\.o|o\.0|0\.o)/ 
+      else if word =~ /(o\.O|O\.o|o\.0|0\.o)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/annoyed.png\" /> "
-      elsif word =~ /(xd+|xD+|XD+)/ 
+      else if word =~ /(xd+|xD+|XD+)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/laugth.png\" /> "
-      elsif word =~ /(:megusta:)/ 
+      else if word =~ /(:megusta:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/megusta.png\" /> "
-      elsif word =~ /(:fuckyea:)/ 
+      else if word =~ /(:fuckyea:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/fuckyea.png\" /> "
-      elsif word =~ /(:yuno:)/ 
+      else if word =~ /(:yuno:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/yuno.png\" /> "
-      elsif word =~ /(:trollface:)/ 
+      else if word =~ /(:trollface:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/trollface.png\" /> "
-      elsif word =~ /(:son:)/ 
+      else if word =~ /(:son:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/son.png\" /> "
-      elsif word =~ /(:lol:)/ 
+      else if word =~ /(:lol:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/lol.png\" /> "
-      elsif word =~ /(:really:)/ 
+      else if word =~ /(:really:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/really.png\" /> "
-      elsif word =~ /(:ff*uuu*:)/ 
+      else if word =~ /(:ff*uuu*:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/fuuu.png\" /> "
-      elsif word =~ /(:happy:)/ 
+      else if word =~ /(:happy:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/happy2.png\" /> "
-      elsif word =~ /(:u+mm*:)/ 
+      else if word =~ /(:u+mm*:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/umm.png\" /> "
-      elsif word =~ /(:okay:)/ 
+      else if word =~ /(:okay:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/okay.png\" /> "
-      elsif word =~ /(:fuckyeagirl:)/ 
+      else if word =~ /(:fuckyeagirl:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/fuckyeagirl.png\" /> "
-      elsif word =~ /(:motherofgod:)/ 
+      else if word =~ /(:motherofgod:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/motherofgod.png\" /> "
-      elsif word =~ /(:sadtroll:)/ 
+      else if word =~ /(:sadtroll:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/sadtroll.png\" /> "
-      elsif word =~ /(:yaoming:)/ 
+      else if word =~ /(:yaoming:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/yaoming.png\" /> "
-      elsif word =~ /(:ninja:)/ 
+      else if word =~ /(:ninja:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/ninja.png\" /> "
-      elsif word =~ /(:emm*:)/ 
+      else if word =~ /(:emm*:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/emm.png\" /> "
-      elsif word =~ /(:fuuu*girl:)/ 
+      else if word =~ /(:fuuu*girl:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/fuuugirl.png\" /> "
-      elsif word =~ /(:happygirl:)/ 
+      else if word =~ /(:happygirl:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/happygirl.png\" /> "
-      elsif word =~ /(:angry:)/ 
+      else if word =~ /(:angry:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/angry2.png\" /> "
-      elsif word =~ /(:foreveralone:)/ 
+      else if word =~ /(:foreveralone:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/foreveralone.png\" /> "
-      elsif word =~ /(:challengeaccepted:)/ 
+      else if word =~ /(:challengeaccepted:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/challengeaccepted.png\" /> "
-      elsif word =~ /(:whynot:)/ 
+      else if word =~ /(:whynot:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/whynot.png\" /> "
-      elsif word =~ /(:trolldad:)/ 
+      else if word =~ /(:trolldad:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/trolldad.png\" /> "
-      elsif word =~ /(:raisins:)/ 
+      else if word =~ /(:raisins:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/raisins.png\" /> "
-      elsif word =~ /(:pukerainbows:)/ 
+      else if word =~ /(:pukerainbows:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/pukerainbows.png\" /> "
-      elsif word =~ /(:coo*l:)/ 
+      else if word =~ /(:coo*l:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/cool.png\" /> "
-      elsif word =~ /(:fuuu*girl2:)/ 
+      else if word =~ /(:fuuu*girl2:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/fuuugirl2.png\" /> "
-      elsif word =~ /(:omf:)/ 
+      else if word =~ /(:omf:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/omf.png\" /> "
-      elsif word =~ /(:why:)/ 
+      else if word =~ /(:why:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/why.png\" /> "
-      elsif word =~ /(:neveralone:)/ 
+      else if word =~ /(:neveralone:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/neveralone.png\" /> "
-      elsif word =~ /(:kiddingme:)/ 
+      else if word =~ /(:kiddingme:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/kiddingme.png\" /> "
-      elsif word =~ /(:suspicious:)/ 
+      else if word =~ /(:suspicious:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/suspicious.png\" /> "
-      elsif word =~ /(:trollgirl:)/ 
+      else if word =~ /(:trollgirl:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/trollgirl.png\" /> "
-      elsif word =~ /(:inglip:)/ 
+      else if word =~ /(:inglip:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/inglip.png\" /> "
-      elsif word =~ /(:itsfree:)/ 
+      else if word =~ /(:itsfree:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/itsfree.png\" /> "
-      elsif word =~ /(:mentira:)/ 
+      else if word =~ /(:mentira:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/mentira.png\" /> "
-      elsif word =~ /(:feellikeasir:)/ 
+      else if word =~ /(:feellikeasir:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/feellikeasir.png\" /> "
-      elsif word =~ /(:cereales:)/ 
+      else if word =~ /(:cereales:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/cereales.png\" /> "
-      elsif word =~ /(:betterthanexpected:)/ 
+      else if word =~ /(:betterthanexpected:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/betterthanexpected.png\" /> "
-      elsif word =~ /(:aww*yea+:)/ 
+      else if word =~ /(:aww*yea+:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/awwyea.png\" /> "
-      elsif word =~ /(:(fap)+girl:)/ 
+      else if word =~ /(:(fap)+girl:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/fapfapgirl.png\" /> "
-      elsif word =~ /(:(fap)+:)/ 
+      else if word =~ /(:(fap)+:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/fapfap.png\" /> "
-      elsif word =~ /(:trolledtroll:)/ 
+      else if word =~ /(:trolledtroll:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/trolledtroll.png\" /> "
-      elsif word =~ /(:raisins2:)/ 
+      else if word =~ /(:raisins2:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/raisins2.png\" /> "
-      elsif word =~ /(:jodete:)/ 
+      else if word =~ /(:jodete:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/jodete.png\" /> "
-      elsif word =~ /(:itssomething:)/ 
+      else if word =~ /(:itssomething:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/itssomething.png\" /> "
-      elsif word =~ /(:pokerface:)/ 
+      else if word =~ /(:pokerface:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/pokerface.png\" /> "
-      elsif word =~ /(:upset:)/ 
+      else if word =~ /(:upset:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/upset.png\" /> "
-      elsif word =~ /(:u+f+:)/ 
+      else if word =~ /(:u+f+:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/uf.png\" /> "
-      elsif word =~ /(:menti:)/ 
+      else if word =~ /(:menti:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/menti.png\" /> "
-      elsif word =~ /(:mirada:)/ 
+      else if word =~ /(:mirada:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/mirada.png\" /> "
-      elsif word =~ /(:no:)/ 
+      else if word =~ /(:no:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/no.png\" /> "
-      elsif word =~ /(:nothing:)/ 
+      else if word =~ /(:nothing:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/nothing.png\" /> "
-      elsif word =~ /(:notbad2:)/ 
+      else if word =~ /(:notbad2:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/notbad2.png\" /> "
-      elsif word =~ /(:notbad1:)/ 
+      else if word =~ /(:notbad1:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/notbad1.png\" /> "
-      elsif word =~ /(:desprecio:)/ 
+      else if word =~ /(:desprecio:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/desprecio.png\" /> "
-      elsif word =~ /(:friki:)/ 
+      else if word =~ /(:friki:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/friki.png\" /> "
-      elsif word =~ /(:serious1:)/ 
+      else if word =~ /(:serious1:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/serious1.png\" /> "
-      elsif word =~ /(:serious2:)/ 
+      else if word =~ /(:serious2:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/serious2.png\" /> "
-      elsif word =~ /(:truestory:)/ 
+      else if word =~ /(:truestory:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/truestory.png\" /> "
-      elsif word =~ /(:observer:)/ 
+      else if word =~ /(:observer:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/observer.png\" /> "
-      elsif word =~ /(:freddie:)/ 
+      else if word =~ /(:freddie:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/freddie.png\" /> "
-      elsif word =~ /(:jackie:)/ 
+      else if word =~ /(:jackie:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/jackie.png\" /> "
-      elsif word =~ /(http|www|ftp)\S+/
+      else if word =~ /(https*|www|ftp)\S+/
 	if word =~ /http/
 	  cadena+=" <a href=\"#{word}\">#{word}</a> "
 	else
@@ -220,7 +216,7 @@ module ApplicationHelper
 	end
       else
 	cadena+=" #{word} "
-      end
+      end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end end 
     end
     cadena
     

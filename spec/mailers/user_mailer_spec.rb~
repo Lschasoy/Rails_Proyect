@@ -6,4 +6,4 @@ require 'spec_helper'
 #       user = User.authenticate_by_email("bar@foo.com")
 #       UserMailer.new_password(user,newpass)
 #     end
-#   end
+  end

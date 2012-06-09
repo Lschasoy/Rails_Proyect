@@ -35,7 +35,7 @@ module ApplicationHelper
   def formatear(str)
     a = str.split(" ")
     cadena = ""
-    a.each do |word| print word
+    a.each do |word|
       if word =~ /(\:\)|\:-\)|\=\])/
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/smyle.png\" /> "
       elsif word =~ /(:D|:-D|=D)/ 

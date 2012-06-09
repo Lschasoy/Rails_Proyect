@@ -66,9 +66,6 @@ class UsersController < ApplicationController
     render 'show_follow'
   end
 
-  def search
-    @projects = User.search(params[:search])
-  end 
   private
 
     def authenticate

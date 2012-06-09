@@ -1,4 +1,5 @@
-<li>
+<% if !user.admin? %>
+<li class="usuario" id="user_<%= user.name.downcase %>">
   <table>
     <tbody>
       <tr>
@@ -13,3 +14,4 @@
     </tbody>
   </table>
 </li>
+<% end %>

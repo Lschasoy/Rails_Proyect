@@ -17,14 +17,14 @@
 <div id="sidebar">
   <div id="sidebar" class="int">
       <%= render 'shared/user_info' %>
+  </div>
+</div>
+
       <%= render 'shared/stats' %>
-      <% unless @users.empty? %>
-        <div>
-        <% @users.each do |user| %>
-          <%= link_to gravatar_for(user, :size => 30), user %>
-        <% end %>
-        </div>
-      <% end %>
+
+<div id="sidebar">
+  <div id="sidebar" class="int">
+    <%= render 'shared/search' %>
   </div>
 </div>
 </div>

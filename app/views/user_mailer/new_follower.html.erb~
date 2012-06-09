@@ -10,7 +10,7 @@
       ahora visualizará los microposts que usted haga.<br/>
     </p>
     <p>
-      Puede ver su perfil en: pure-galaxy-5966.herokuapp.com/users/<%= @user.id %>
+      Puede ver su perfil en: pure-galaxy-5966.herokuapp.com/users/<%= @user.id %>.
     </p>
   </body>
 </html>

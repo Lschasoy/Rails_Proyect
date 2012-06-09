@@ -35,7 +35,7 @@ class PagesController < ApplicationController
       @user.password=@newpass
       @user.update_attributes!(@user)
     #Enviar email con la nueva contraseña
-      UserMailer.new_password(@user,@newpass).deliver
+      #UserMailer.new_password(@user,@newpass).deliver
     #Cargar página de contraseña cambiada
       render 'newpassgen'
     end

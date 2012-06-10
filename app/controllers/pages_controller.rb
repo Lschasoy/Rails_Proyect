@@ -27,16 +27,13 @@ class PagesController < ApplicationController
       @title = "Cambiar password"
       render 'newpass'
     else
-    #Cambiar la contraseña del usuario
       @newpass=""
       6.times do 
         @newpass+=rand(10).to_s()
       end
       @user.password=@newpass
       @user.update_attributes!(@user)
-    #Enviar email con la nueva contraseña
-#       UserMailer.new_password(@user,@newpass).deliver
-    #Cargar página de contraseña cambiada
+#      UserMailer.new_password(@user,@newpass).deliver
       render 'newpassgen'
     end
 

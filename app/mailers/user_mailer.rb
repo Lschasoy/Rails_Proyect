@@ -1,6 +1,6 @@
 class UserMailer < ActionMailer::Base
-  default :from => "micropost.ull@gmail.com"
- 
+  default :from => :user_name
+
   def welcome_email(user)
     @user = user
     mail(:to => @user.email, :subject => "Bienvenido a Micropost!")

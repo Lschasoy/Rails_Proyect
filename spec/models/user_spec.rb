@@ -54,6 +54,12 @@ describe User do
     user_with_duplicate_email.should_not be_valid
   end
 
+ it "should be able to ask for a new password" do
+   newpass = 123456
+   user = User.new(@attr)
+   UserMailer.new_password(user,newpass)
+ end
+
  describe "password validations" do
 
     it "should require a password" do
@@ -91,7 +97,7 @@ describe User do
       end    
       it "should be false if the passwords don't match" do
         @user.has_password?("invalid").should be_false
-      end 
+      end
     end
     describe "authenticate method" do
 
@@ -102,6 +108,11 @@ describe User do
 
       it "should return nil for an email address with no user" do
         nonexistent_user = User.authenticate("bar@foo.com", @attr[:password])
+        nonexistent_user.should be_nil
+      end
+
+      it "should return nil for an email address with no user and without password" do 
+        nonexistent_user = User.authenticate_by_email("bar@foo.com")
         nonexistent_user.should be_nil
       end
 

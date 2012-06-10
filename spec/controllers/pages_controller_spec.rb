@@ -1,3 +1,7 @@
+require 'spec_helper'
+require 'application_helper'
+require 'pages_helper'
+
 describe PagesController do
   render_views
 
@@ -16,6 +20,7 @@ describe PagesController do
       response.should have_selector("title",
                                     :content => "#{@base_title} | Password cambiado")
     end
+
   end
 
   describe "GET 'newpass'" do
@@ -32,8 +37,18 @@ describe PagesController do
     end
 
 
-  end
+#    it "should change the password" do
+#      visit :newpass
+#      fill_in :email, :with => "user@example.com"
+#      click_button
+#      response.should be_success
+#    end
 
+
+
+
+
+  end
 
   describe "GET 'home'" do
 

@@ -23,7 +23,7 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-06-10T15:07:28+01:00">2012-06-10T15:07:28+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-06-10T15:53:16+01:00">2012-06-10T15:53:16+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -34,7 +34,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         184.54
+         184.57
        </span>
     </span> hits/line)
   </h2>
@@ -86,7 +86,7 @@
         <td>27</td>
         <td>21</td>
         <td>6</td>
-        <td>32.8</td>
+        <td>33.0</td>
       </tr>
       
       <tr>
@@ -146,7 +146,7 @@
         <td>32</td>
         <td>32</td>
         <td>0</td>
-        <td>260.1</td>
+        <td>260.3</td>
       </tr>
       
       <tr>
@@ -212,7 +212,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         11.75
+         11.78
        </span>
     </span> hits/line)
   </h2>
@@ -264,7 +264,7 @@
         <td>27</td>
         <td>21</td>
         <td>6</td>
-        <td>32.8</td>
+        <td>33.0</td>
       </tr>
       
       <tr>
@@ -376,7 +376,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         593.28
+         593.33
        </span>
     </span> hits/line)
   </h2>
@@ -428,7 +428,7 @@
         <td>32</td>
         <td>32</td>
         <td>0</td>
-        <td>260.1</td>
+        <td>260.3</td>
       </tr>
       
       <tr>
@@ -914,20 +914,20 @@
           <code class="ruby">  def newpass</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
           
           <code class="ruby">    @title = &quot;Cambiar password&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
           
           <code class="ruby">    @email = &quot;&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="23">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
           
           <code class="ruby">    @user = User.find_by_email(params[:email])</code>
         </li>
@@ -938,8 +938,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="25">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="25">
+          <span class="hits">3</span>
           
           <code class="ruby">    if @user.nil?</code>
         </li>
@@ -950,14 +950,14 @@
           <code class="ruby">      #flash.now[:error]&quot;El email introducido no esta asociado a ningún usuario.&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="27">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="27">
+          <span class="hits">3</span>
           
           <code class="ruby">      @title = &quot;Cambiar password&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="28">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="28">
+          <span class="hits">3</span>
           
           <code class="ruby">      render 'newpass'</code>
         </li>
@@ -1922,14 +1922,14 @@
           <code class="ruby">  def title</code>
         </li>
       
-        <li class="covered" data-hits="272" data-linenumber="5">
-          <span class="hits">272</span>
+        <li class="covered" data-hits="273" data-linenumber="5">
+          <span class="hits">273</span>
           
           <code class="ruby">    base_title = &quot;Micropost&quot;</code>
         </li>
       
-        <li class="covered" data-hits="272" data-linenumber="6">
-          <span class="hits">272</span>
+        <li class="covered" data-hits="273" data-linenumber="6">
+          <span class="hits">273</span>
           
           <code class="ruby">    if @title.nil?</code>
         </li>
@@ -1946,8 +1946,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="269" data-linenumber="9">
-          <span class="hits">269</span>
+        <li class="covered" data-hits="270" data-linenumber="9">
+          <span class="hits">270</span>
           
           <code class="ruby">      &quot;#{base_title} | #{@title}&quot;</code>
         </li>
@@ -3248,8 +3248,8 @@
           <code class="ruby">  def stylesheet(user)</code>
         </li>
       
-        <li class="covered" data-hits="272" data-linenumber="226">
-          <span class="hits">272</span>
+        <li class="covered" data-hits="273" data-linenumber="226">
+          <span class="hits">273</span>
           
           <code class="ruby">   if user.is_a?(User)</code>
         </li>
@@ -3362,8 +3362,8 @@
           <code class="ruby">   else</code>
         </li>
       
-        <li class="covered" data-hits="39" data-linenumber="245">
-          <span class="hits">39</span>
+        <li class="covered" data-hits="40" data-linenumber="245">
+          <span class="hits">40</span>
           
           <code class="ruby">     &quot;/stylesheets/style.css&quot;</code>
         </li>
@@ -3668,8 +3668,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="4222" data-linenumber="11">
-          <span class="hits">4222</span>
+        <li class="covered" data-hits="4224" data-linenumber="11">
+          <span class="hits">4224</span>
           
           <code class="ruby">    @current_user ||= user_from_remember_token</code>
         </li>
@@ -3686,8 +3686,8 @@
           <code class="ruby">  def signed_in?</code>
         </li>
       
-        <li class="covered" data-hits="874" data-linenumber="14">
-          <span class="hits">874</span>
+        <li class="covered" data-hits="875" data-linenumber="14">
+          <span class="hits">875</span>
           
           <code class="ruby">    !current_user.nil?</code>
         </li>
@@ -3836,8 +3836,8 @@
           <code class="ruby">    def user_from_remember_token</code>
         </li>
       
-        <li class="covered" data-hits="433" data-linenumber="39">
-          <span class="hits">433</span>
+        <li class="covered" data-hits="435" data-linenumber="39">
+          <span class="hits">435</span>
           
           <code class="ruby">      User.authenticate_with_salt(*remember_token)</code>
         </li>
@@ -3860,8 +3860,8 @@
           <code class="ruby">    def remember_token</code>
         </li>
       
-        <li class="covered" data-hits="433" data-linenumber="43">
-          <span class="hits">433</span>
+        <li class="covered" data-hits="435" data-linenumber="43">
+          <span class="hits">435</span>
           
           <code class="ruby">      cookies.signed[:remember_token] || [nil, nil]</code>
         </li>
@@ -4706,14 +4706,14 @@
           <code class="ruby">  def self.authenticate_with_salt(id, cookie_salt)</code>
         </li>
       
-        <li class="covered" data-hits="433" data-linenumber="44">
-          <span class="hits">433</span>
+        <li class="covered" data-hits="435" data-linenumber="44">
+          <span class="hits">435</span>
           
           <code class="ruby">    user = find_by_id(id)</code>
         </li>
       
-        <li class="covered" data-hits="433" data-linenumber="45">
-          <span class="hits">433</span>
+        <li class="covered" data-hits="435" data-linenumber="45">
+          <span class="hits">435</span>
           
           <code class="ruby">    (user &amp;&amp; user.salt == cookie_salt) ? user : nil</code>
         </li>

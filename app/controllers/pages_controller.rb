@@ -32,7 +32,7 @@ class PagesController < ApplicationController
       render 'newpass'
     else
       @user.password=@newpass; @user.update_attributes!(@user)
-#       UserMailer.new_password(@user,@newpass).deliver
+       UserMailer.new_password(@user,@newpass).deliver
       render 'newpassgen'
     end
 

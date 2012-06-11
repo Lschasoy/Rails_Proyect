@@ -16,7 +16,7 @@ ActionMailer::Base.smtp_settings = {
 :port                 => 587,  
 :domain               => "gmail.com",  
 #Direcciones => micropost.ull , micropost2.ull , micropost3.ull , micropost4.ull
-:user_name            => "micropost.ull@gmail.com",  
+:user_name            => "micropost2.ull@gmail.com",  
 :password             => "micropost123456",  
 :authentication       => "plain"  
 }

@@ -50,14 +50,14 @@ class User < ActiveRecord::Base
 
   def follow!(followed)
     if followed.notification == "1" 
-#        UserMailer.new_follower(self,followed).deliver
+        UserMailer.new_follower(self,followed).deliver
     end
     relationships.create!(:followed_id => followed.id)
   end
 
   def unfollow!(followed)
     if followed.notification == "1" 
-#        UserMailer.unfollow_advice(self,followed).deliver
+        UserMailer.unfollow_advice(self,followed).deliver
     end
     relationships.find_by_followed_id(followed).destroy
   end

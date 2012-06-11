@@ -10,6 +10,19 @@ module ApplicationHelper
     end
   end
   
+  def foto(str)
+    codigo = ""
+    str.gsub (/(https*|www).*.(png|jpg|jpeg|gif)\s?/) do |url|
+      codigo = url
+      '#{url}'
+    end
+    if codigo == ""
+      ""
+    else
+      codigo
+    end
+  end
+  
    def formato(str)
     codigo = ""
     code = ""
@@ -204,7 +217,7 @@ module ApplicationHelper
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/freddie.png\" /> "
       else if word =~ /(:jackie:)/ 
 	cadena+=" <img class=\"icon\" alt=\"#{word.downcase}\"  src=\"/images/icon/jackie.png\" /> "
-      else if word =~ /(https*|www|ftp)\S+/
+      else if word =~ /(https?|www|ftp)\S+/
 	if word =~ /http/
 	  cadena+=" <a href=\"#{word}\">#{word}</a> "
 	else

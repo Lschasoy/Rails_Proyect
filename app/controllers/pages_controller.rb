@@ -20,6 +20,10 @@ class PagesController < ApplicationController
   def newpass
     @title = "Cambiar password"
     @email = ""
+    @newpass=""
+    6.times do 
+      @newpass+=rand(10).to_s()
+    end
     @user = User.find_by_email(params[:email])
 
     if @user.nil?
@@ -27,13 +31,8 @@ class PagesController < ApplicationController
       @title = "Cambiar password"
       render 'newpass'
     else
-      @newpass=""
-      6.times do 
-        @newpass+=rand(10).to_s()
-      end
-      @user.password=@newpass
-      @user.update_attributes!(@user)
-#      UserMailer.new_password(@user,@newpass).deliver
+      @user.password=@newpass; @user.update_attributes!(@user)
+#       UserMailer.new_password(@user,@newpass).deliver
       render 'newpassgen'
     end
 

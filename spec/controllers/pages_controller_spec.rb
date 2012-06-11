@@ -28,26 +28,34 @@ describe PagesController do
     before(:each) do
       get :newpass
     end
+    
     it "should be successful" do
-      response.should be_success
+      response.should have_selector("div", :class => "field")
     end
     it "should have the right title" do
       response.should have_selector("title",
                                     :content => "#{@base_title} | Cambiar password")
     end
 
-
-#    it "should change the password" do
-#      visit :newpass
-#      fill_in :email, :with => "user@example.com"
-#      click_button
-#      response.should be_success
-#    end
-
-
-
-
-
+    it "should change the password" do
+      lambda do
+        visit signup_path
+        fill_in :name,                :with => "pepe"
+        fill_in :email,               :with => "pepe@gmail.com"
+        fill_in :password,            :with => "1234"
+	fill_in "Confirmar password", :with => "1234"
+        click_button
+        controller.should be_signed_in
+        click_link "Salir"
+        controller.should_not be_signed_in
+	get :newpass
+	visit :newpass
+	fill_in :email,    :with => "pepe@gmail.com"
+	click_button
+	response.should be_success
+      end
+    end
+    
   end
 
   describe "GET 'home'" do

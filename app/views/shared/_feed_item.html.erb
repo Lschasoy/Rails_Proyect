@@ -19,6 +19,13 @@
       </span>
       <p></p>
     <% end%>
+    <% if foto(feed_item.content) != "" %>
+      <p></p>
+      <span>
+        <img alt="<%= foto(feed_item.content) %>" class="imagen" src="<%= foto(feed_item.content) %>" width="365px" heigth="auto"/>
+      </span>
+      <p></p>
+    <% end%>
     <span class="timestamp">
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>

@@ -63,7 +63,7 @@ describe "Microposts" do
 	end.should change(Micropost, :count).by(1)
 	end
 	lista =  [":desprecio:",":friki:",":serious1:",":serious2:",":truestory:",":observer:",":freddie:",":jackie:","http","https","www","ftp","www.youtube.com/watch?v=set5wts",
-	          "https",             ":observer:",":pokerface:",":omf:",":pukerainbows:",":okay:","3:)","o:)",">:(",":no:",":nothing:",":notbad:",":notbad2:"]
+	          "https",":observer:",":pokerface:",":omf:",":pukerainbows:",":okay:","3:)","o:)",">:(",":no:",":nothing:",":notbad:",":notbad2:"]
 	for i in 0..25
 	content = lista[i]
         lambda do

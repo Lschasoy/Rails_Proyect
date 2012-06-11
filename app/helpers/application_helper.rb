@@ -10,6 +10,19 @@ module ApplicationHelper
     end
   end
   
+  def foto(str)
+    codigo = ""
+    str.gsub (/(https?|www).*.(png|jpg|jpeg|gif)\s?/) do |url|
+      codigo = url
+      '#{url}'
+    end
+    if codigo == ""
+      ""
+    else
+      codigo
+    end
+  end
+  
    def formato(str)
     codigo = ""
     code = ""

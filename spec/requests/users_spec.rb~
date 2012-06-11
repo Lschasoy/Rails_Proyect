@@ -1,7 +1,6 @@
 require 'spec_helper'
 require 'application_helper'
 require 'pages_helper'
-require 'user_helper'
 
 describe "Users" do
 
@@ -31,6 +30,7 @@ describe "Users" do
           fill_in "Email",              :with => "user@example.com"
           fill_in "Password",           :with => "foobar"
           fill_in "Confirmar password", :with => "foobar"
+	  fill_in :user_notification,        :with => "0"
           click_button
           response.should have_selector("div.flash.success",
                                         :content => "Bienvenido")
